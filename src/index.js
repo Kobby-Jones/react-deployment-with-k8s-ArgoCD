@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const style = {
-  height: '500px',
+  height: '400px',
   width: '300px'
 };
 root.render(
