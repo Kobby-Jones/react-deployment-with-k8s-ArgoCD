@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Calender from './Calender/Chart';
+import 'bootstrap/dist/css/bootstrap.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const style = {
+  height: '500px',
+  width: '300px'
+};
 root.render(
   <React.StrictMode>
     <App />
+    <div style={style}>
+      <Calender/>
+    </div>
   </React.StrictMode>
 );
 
