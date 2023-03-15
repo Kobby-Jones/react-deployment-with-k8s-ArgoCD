@@ -5,7 +5,7 @@ function CustomNavbar() {
     
     return (
         <Navbar bg="dark" className='px-5' variant = "dark" expand = "md">
-            <Navbar.Brand href="#">Brand Name</Navbar.Brand>
+            <Navbar.Brand href="#">KJ Real Estate Ltd.</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id ="basic-navbar-nav">
                 <Nav className='ms-auto' >
