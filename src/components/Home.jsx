@@ -1,10 +1,41 @@
 import React from 'react';
-import { Container, Card Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import backgroundImage from '../img/image_2.jpg'
 
-function HomeSection() {
+const HomePage = () => {
     return (
-        <section>
-            
-        </section>
-    )
+      <div
+        className="d-flex align-items-center justify-content-center"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          height: "80vh",
+          backgroundSize: "cover",
+        }}
+      >
+        <Container>
+          <Row>
+            <Col
+              className="text-center p-3"
+              style={{
+                backgroundColor: "rgba(0,0,0,0.5)",
+              }}
+            >
+              <h1 className="text-light fw-bold text-uppercase">
+                Discover your dream home
+              </h1>
+              <p className="text-light my-4">
+                {" "}
+                KJ Real Estate Agency Ltd. is an Accra-based real estate
+                business, offering quality solutions for all your property
+                needs. Whether you're looking to buy, rent, or invest in the
+                Accra area, Kobby-Jones is the team to trust. With years of
+                experience, we ensure you get the best value for your money.
+              </p>
+              <Button variant="primary">Read More</Button>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    );
 }
+export default HomePage;
