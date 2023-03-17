@@ -1,14 +1,12 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap'
-import TestimonialCard from './TestimonialCard';
+import {Container, Row} from 'react-bootstrap'
+import TestimonialCol from './TestimonialCol';
 
  function TestimonialRow() {
      return ( 
          <Container>
              <Row>
-                 <Col xs="4">
-                    <TestimonialCard />
-                 </Col>
+                 <TestimonialCol />
              </Row>
         </Container>
      );
