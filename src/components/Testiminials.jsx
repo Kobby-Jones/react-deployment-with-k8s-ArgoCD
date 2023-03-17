@@ -1,10 +1,11 @@
 import React from 'react';
-// import TestimonialCard from './TestimonialCard';
+import TestimonialRow from './TestimonialRow';
+
  
 const Testimonials = () => {
     return (
         <div>
-            
+            <TestimonialRow />
         </div>
     )
 }
