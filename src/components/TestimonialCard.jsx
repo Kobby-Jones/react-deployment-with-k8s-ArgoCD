@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 const TestimonialCard = (params) => {
     return (
-      <Card className='text-center'>
+      <Card className='text-center p-3'>
           <Card.Text>
             {params.text}
           </Card.Text>
