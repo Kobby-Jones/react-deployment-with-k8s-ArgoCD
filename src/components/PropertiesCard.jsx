@@ -4,7 +4,7 @@ import { Card, Button } from 'react-bootstrap';
 function PropertiesCard(props) {
     return ( 
         <Card>
-            <Card.Img variant="top" src={`${props.ImageUrl}`} />
+            <Card.Img variant="top" alt='House Image' src={props.imageUrl} />
             <Card.Body>
                 <Card.Title>{props.type}</Card.Title>
                 <Card.Text>{ props.address}</Card.Text>
