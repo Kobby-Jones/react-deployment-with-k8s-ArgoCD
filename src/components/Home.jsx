@@ -10,6 +10,7 @@ const HomePage = () => {
           backgroundImage: `url(${backgroundImage})`,
           height: "80vh",
           backgroundSize: "cover",
+          backgroundAttachment: 'fixed'
         }}
       >
         <Container>
