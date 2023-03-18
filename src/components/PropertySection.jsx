@@ -13,6 +13,9 @@ function PropertySection() {
                 <Col lg="4" >
                      <PropertiesCard type={properties.forSale.condo.type} imageUrl = {properties.forSale.condo.image} address = {properties.forSale.condo.address}  />
                 </Col>
+                <Col lg="4" >
+                     <PropertiesCard type={properties.forSale.townHouse.type} imageUrl = {properties.forSale.townHouse.image} address = {properties.forSale.townHouse.address}  />
+                </Col>
             </Row>
         </Container>
      );
