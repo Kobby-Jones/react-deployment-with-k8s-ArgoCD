@@ -5,16 +5,24 @@ import backgroundImage from '../img/image_3.jpg'
  
 const Testimonials = () => {
     return (
-      <div
-        className="p-4"
+      <section
         style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundAttachment:'fixed'
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundAttachment: "fixed",
         }}
       >
-        <h2 className="text-center fw-bolder bg-light mb-3">Customer Testimonials</h2>
-        <TestimonialRow />
-      </div>
+        <div
+          className="text-center py-5"
+          style={{
+            backgroundColor: "rgba(0,0,0,0.6)",
+          }}
+        >
+          <h2 className="fw-bolder text-light mb-3">Customer Testimonials</h2>
+        </div>
+        <div className="p-4">
+          <TestimonialRow />
+        </div>
+      </section>
     );
 }
 export default Testimonials;
