@@ -4,6 +4,7 @@ import PropertiesCard from "./PropertiesCard";
 import forSale from "./Properties";
 import backgroundImage from "../img/image_5.jpg";
 
+
 function PropertySection() {
   return (
     <section
@@ -22,7 +23,7 @@ function PropertySection() {
         <h2 className="mb-3 text-light fw-bolder">Properties For Sale</h2>
       </div>
       <Container>
-        <Row>
+        {/* <Row>
           <Col lg="4">
             <PropertiesCard
               type={forSale.singleFamHouse.type}
@@ -50,6 +51,48 @@ function PropertySection() {
               bathRooms={forSale.townHouse.bathRooms}
             />
           </Col>
+          <Col lg="4">
+            <PropertiesCard
+              type={forSale.apartment.type}
+              imageUrl={forSale.apartment.image}
+              address={forSale.apartment.address}
+              bedRooms={forSale.apartment.bedRooms}
+              bathRooms={forSale.apartment.bathRooms}
+            />
+          </Col>
+          <Col lg="4">
+            <PropertiesCard
+              type={forSale.house.type}
+              imageUrl={forSale.house.image}
+              address={forSale.house.address}
+              bedRooms={forSale.house.bedRooms}
+              bathRooms={forSale.house.bathRooms}
+            />
+          </Col>
+          <Col lg="4">
+            <PropertiesCard
+              type={forSale.condo2.type}
+              imageUrl={forSale.condo2.image}
+              address={forSale.condo2.address}
+              bedRooms={forSale.condo2.bedRooms}
+              bathRooms={forSale.condo2.bathRooms}
+            />
+          </Col>
+        </Row> */}
+        <Row>
+          {forSale.map((property) =>
+            Object.keys(property).map((propType) => (
+              <Col lg="4" className="mt-3">
+                <PropertiesCard
+                  type={property[propType].type}
+                  imageUrl={property[propType].image}
+                  address={property[propType].address}
+                  bedRooms={property[propType].bedRooms}
+                  bathRooms={property[propType].bathRooms}
+                />
+              </Col>
+            ))
+          )}
         </Row>
       </Container>
     </section>
