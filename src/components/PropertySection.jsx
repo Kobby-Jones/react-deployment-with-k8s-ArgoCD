@@ -2,12 +2,24 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import PropertiesCard from './PropertiesCard';
 import properties from './Properties';
+import backgroundImage from '../img/image_5.jpg'
 
 function PropertySection() {
     return (
-      <section className="bg-info py-5">
-        <div className="text-center">
-          <h2 className="mb-3">Properties For Sale</h2>
+      <section
+        className="bg-info py-5"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div
+          className="text-center py-5"
+          style={{
+            backgroundColor: "rgba(0,0,0,0.8)",
+          }}
+        >
+          <h2 className="mb-3 text-light fw-bolder">Properties For Sale</h2>
         </div>
         <Container>
           <Row>
