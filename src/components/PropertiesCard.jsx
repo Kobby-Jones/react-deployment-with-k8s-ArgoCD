@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 
 function PropertiesCard(props) {
     return ( 
-        <Card>
+        <Card className='text-center p-3'>
             <Card.Img variant="top" alt='House Image' src={props.imageUrl} />
             <Card.Body>
                 <Card.Title>{props.type}</Card.Title>
