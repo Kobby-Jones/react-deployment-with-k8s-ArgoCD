@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from './components/Home';
 import CustomNavbar from './components/Navbar';
-import PropertySection from './components/PropertySection';
+import SalesPropertySection from "./components/SalesPropertySection";
 import Testimonials from './components/Testiminials';
 
 
@@ -11,7 +11,7 @@ function App() {
       <CustomNavbar />
       <HomePage />
       <Testimonials />
-      <PropertySection />
+      <SalesPropertySection />
     </div>
   );
 }

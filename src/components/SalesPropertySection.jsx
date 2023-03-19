@@ -5,7 +5,7 @@ import forSale from "./saleProperties";
 import backgroundImage from "../img/image_5.jpg";
 
 
-function PropertySection() {
+function SalesPropertySection() {
   return (
     <section
       className="bg-info py-5"
@@ -99,4 +99,4 @@ function PropertySection() {
   );
 }
 
-export default PropertySection;
+export default SalesPropertySection;
