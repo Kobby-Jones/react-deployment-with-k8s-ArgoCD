@@ -5,9 +5,8 @@ import houseBoat_Image from '../img/luxury_villa_2.jpg'
 import coHouse_Image from '../img/rent_img_3.jpg'
 import earthSheltered_Image from '../img/luxury_villa_3.jpg'
 
-const rentProperties = [
+const forRent = [
   {
-    forRent: {
       townHouse: {
         type: "Town House",
         image: townHouse_Image,
@@ -50,7 +49,6 @@ const rentProperties = [
         bathRooms: 1,
         address: "9101 Oak Street, East Legon",
       },
-    },
   },
 ];
-export default rentProperties;
+export default forRent;
