@@ -7,9 +7,19 @@ function RentPropertySection() {
         className="bg-info py-5"
         style={{
           backgroundImage: `url(${backgroundImage})`,
-          backgroundAttachment: "fixed",
+            backgroundAttachment: "fixed",
+          backgroundSize:'cover'
         }}
-      ></section>
+      >
+        <div
+          className="text-center py-5"
+          style={{
+            backgroundColor: "rgba(0,0,0,0.8)",
+          }}
+        >
+          <h2 className="mb-3 text-light fw-bolder">Properties For Rent</h2>
+        </div>
+      </section>
     );
 }
 
