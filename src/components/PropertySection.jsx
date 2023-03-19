@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import PropertiesCard from "./PropertiesCard";
-import forSale from "./Properties";
+import forSale from "./saleProperties";
 import backgroundImage from "../img/image_5.jpg";
 
 
