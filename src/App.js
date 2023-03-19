@@ -1,6 +1,7 @@
 import './App.css';
 import HomePage from './components/Home';
 import CustomNavbar from './components/Navbar';
+import RentPropertySection from './components/RentPropertiesSection';
 import SalesPropertySection from "./components/SalesPropertySection";
 import Testimonials from './components/Testiminials';
 
@@ -12,6 +13,7 @@ function App() {
       <HomePage />
       <Testimonials />
       <SalesPropertySection />
+      <RentPropertySection />
     </div>
   );
 }
