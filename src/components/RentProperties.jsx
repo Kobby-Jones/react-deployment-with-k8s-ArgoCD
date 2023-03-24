@@ -1,54 +1,55 @@
-import retirementHome_Image from '../img/luxury_villa.jpg'
-import townHouse_Image from '../img/rent_img_1.jpg'
-import mobileHouse_Image from '../img/rent_img_2.jpg'
-import houseBoat_Image from '../img/luxury_villa_2.jpg'
-import coHouse_Image from '../img/rent_img_3.jpg'
-import earthSheltered_Image from '../img/luxury_villa_3.jpg'
+import singleFamHouse_Image from "../img/image_6.jpg";
+import condo_Image from "../img/image_1.jpg";
+import townHouse_Image from "../img/image_8.jpg";
+import apartment_Image from "../img/image_5.jpg";
+import house_Image from "../img/header_img_1.jpg";
+import rentCondor_Image from "../img/image_3.jpg";
 
 const forRent = [
   {
-      townHouse: {
-        type: "Town House",
-        image: townHouse_Image,
-        bedRooms: 1,
-        bathRooms: 1,
-        address: "1234 Main Street, Kumasi",
-      },
-      mobileHouse: {
-        type: "Mobile House",
-        image: mobileHouse_Image,
-        bedRooms: 3,
-        bathRooms: 2,
-        address: "5678 Park Avenue, Sunyani",
-      },
-      retirementHome: {
-        type: "Retirement Home",
-        image: retirementHome_Image,
-        bedRooms: 1,
-        bathRooms: 1,
-        address: "9101 Oak Street, East Legon",
-      },
-      coHouse: {
-        type: "Co-Housing",
-        image: coHouse_Image,
-        bedRooms: 1,
-        bathRooms: 1,
-        address: "9101 Oak Street, East Legon",
-      },
-      houseBoat: {
-        type: "House Boat",
-        image: houseBoat_Image,
-        bedRooms: 1,
-        bathRooms: 1,
-        address: "9101 Oak Street, East Legon",
-      },
-      earthSheltered: {
-        type: "Earth-Sheltered House",
-        image: earthSheltered_Image,
-        bedRooms: 1,
-        bathRooms: 1,
-        address: "9101 Oak Street, East Legon",
-      },
+    singleFamHouse: {
+      type: "Single-Family House",
+      image: singleFamHouse_Image,
+      bedRooms: 3,
+      bathRooms: 2,
+      address: "1234 Main Street, Bantama",
+    },
+    condo: {
+      type: "Condo",
+      image: condo_Image,
+      bedRooms: 2,
+      bathRooms: 2,
+      address: "5678 Kings Avenue, Kof-Town",
+    },
+    townHouse: {
+      type: "TownHouse",
+      image: townHouse_Image,
+      bedRooms: 4,
+      bathRooms: 3,
+      address: "9101 Flint Street, Takoradi",
+    },
+    apartment: {
+      type: "Apartment",
+      image: apartment_Image,
+      bedRooms: 1,
+      bathRooms: 1,
+      address: "1234 Main Street, Kumasi",
+    },
+    house: {
+      type: "House",
+      image: house_Image,
+      bedRooms: 3,
+      bathRooms: 2,
+      address: "5678 Park Avenue, Sunyani",
+    },
+    condo2: {
+      type: "Condo",
+      image: rentCondor_Image,
+      bedRooms: 1,
+      bathRooms: 1,
+      address: "9101 Oak Street, East Legon",
+    },
   },
 ];
+
 export default forRent;
