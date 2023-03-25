@@ -1,21 +1,12 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import WhoWeAre from './WhoWeAre';
 
 function About() {
     return (
       <section>
-        <div className="services-head text-center py-3">
-          <h3 className="text-uppercase">Who we are</h3>
-        </div>
-        <div className="line">
-          <hr
-            style={{
-              width: "100%"
-            }}
-          />
-        </div>
         <Container>
-            
+           <WhoWeAre />
         </Container>
       </section>
     );
