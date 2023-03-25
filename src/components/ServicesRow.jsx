@@ -12,6 +12,12 @@ function ServicesRow() {
             text={services.rentAndSell.text}
           />
         </Col>
+        <Col lg="4">
+          <ServicesCard
+            title={services.propertyManagement.title}
+            text={services.propertyManagement.text}
+          />
+        </Col>
       </Row>
     );
 }
