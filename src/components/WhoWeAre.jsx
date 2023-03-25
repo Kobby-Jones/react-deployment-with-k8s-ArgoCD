@@ -12,7 +12,7 @@ function WhoWeAre() {
             }}
           />
         </div>
-        <div className="text-center">
+            <div className="text-center">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
             dolorum. Vel, pariatur veniam. Eveniet voluptatum vitae minus
