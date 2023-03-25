@@ -1,4 +1,8 @@
 import React from 'react';
+import TestimonialCard from './TestimonialCard';
+import ServicesCard from './ServicesCard';
+import services from './ServicesTexts';
+
 function Services() {
     return ( 
         <div>
@@ -14,6 +18,8 @@ function Services() {
                 }
                 />
             </div>
+            <ServicesCard title={services.rentAndSell.title} text={ services.rentAndSell.text} />
+            <TestimonialCard />
         </div>
      );
 }

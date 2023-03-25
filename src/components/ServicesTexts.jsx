@@ -12,4 +12,4 @@ const services = {
     text: "Client Property Listing Services allow property owners to list their properties with us for sale or rent. We offer a variety of listing options, from basic online listings to full-service marketing campaigns. Our agents will work closely with you to create a customized marketing plan that meets your specific needs and goals.",
   },
 };
-export default services
+export default services;

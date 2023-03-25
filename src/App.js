@@ -5,6 +5,7 @@ import HomePage from './components/Home';
 import CustomNavbar from './components/Navbar';
 import RentPropertySection from './components/RentPropertiesSection';
 import SalesPropertySection from "./components/SalesPropertySection";
+import Services from './components/Services';
 import Testimonials from './components/Testiminials';
 
 // sk - w3mzBwsYTda1E0kTVNWET3BlbkFJltpEjVNqaE1vTBKvlXPH;
@@ -18,6 +19,7 @@ function App() {
       <SalesPropertySection />
       <RentPropertySection />
       <About />
+      <Services />
     </div>
   );
 }
