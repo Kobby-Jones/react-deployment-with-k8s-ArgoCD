@@ -18,6 +18,12 @@ function ServicesRow() {
             text={services.propertyManagement.text}
           />
         </Col>
+        <Col lg="4">
+          <ServicesCard
+            title={services.propertyListing.title}
+            text={services.propertyListing.text}
+          />
+        </Col>
       </Row>
     );
 }
