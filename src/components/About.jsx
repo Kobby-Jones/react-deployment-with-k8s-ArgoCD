@@ -4,8 +4,8 @@ import { Container } from 'react-bootstrap';
 function About() {
     return (
       <section>
-        <div className="services-head text-center">
-          <h2 className="text-uppercase">Our Services</h2>
+        <div className="services-head text-center py-3">
+          <h3 className="text-uppercase">Who we are</h3>
         </div>
         <div className="line">
           <hr
@@ -14,7 +14,9 @@ function About() {
             }}
           />
         </div>
-        <Container></Container>
+        <Container>
+            
+        </Container>
       </section>
     );
 }
