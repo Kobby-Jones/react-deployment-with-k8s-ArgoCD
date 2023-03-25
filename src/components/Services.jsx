@@ -1,9 +1,10 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import ServicesRow from './ServicesRow';
 
 function Services() {
     return ( 
-        <div>
+        <Container className='py-4'>
             <div className="services-head text-center py-3">
                 <h2 className="text-uppercae">Our services</h2>
             </div>
@@ -17,7 +18,7 @@ function Services() {
                 />
             </div>
             <ServicesRow />    
-        </div>
+        </Container>
      );
 }
 

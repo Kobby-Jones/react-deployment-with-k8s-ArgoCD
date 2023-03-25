@@ -7,9 +7,9 @@ const services = {
     title: "Property Management Services",
     text: "Our Property Management Services are designed to make property ownership a hassle-free experience. We offer a complete suite of management services, including tenant screening and selection, rent collection, property maintenance, and accounting services. We work with a network of reliable contractors and vendors to ensure that your property is always in top condition and that any maintenance issues are addressed promptly.",
   },
-    propertyListing: {
-      title: "Client Property Listing Services",
-    text: "Client Property Listing Services allow property owners to list their properties with us for sale or rent. We offer a variety of listing options, from basic online listings to full-service marketing campaigns. Our agents will work closely with you to create a customized marketing plan that meets your specific needs and goals.",
+  propertyListing: {
+    title: "Client Property Listing Services",
+    text: "Client Property Listing Services allow property owners to list their properties with us for sale or rent. We offer a variety of listing options, from basic online listings to full-service marketing campaigns. Our agents will work closely with you to create a customized marketing plan that meets your specific needs and goals.Our experienced agents are well-versed in the latest market trends and have the knowledge and expertise to guide you through the entire process.",
   },
 };
 export default services;

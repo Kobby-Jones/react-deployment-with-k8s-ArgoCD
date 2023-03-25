@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 function ServicesCard(params) {
     return (
       <div>
-        <Card>
+        <Card className='pt-3 mt-3'>
           <Card.Title>
             <div className="icon text-center">
             </div>
