@@ -1,7 +1,5 @@
 import React from 'react';
-import TestimonialCard from './TestimonialCard';
-import ServicesCard from './ServicesCard';
-import services from './ServicesTexts';
+import ServicesRow from './ServicesRow';
 
 function Services() {
     return ( 
@@ -18,8 +16,7 @@ function Services() {
                 }
                 />
             </div>
-            <ServicesCard title={services.rentAndSell.title} text={ services.rentAndSell.text} />
-            <TestimonialCard />
+            <ServicesRow />    
         </div>
      );
 }
