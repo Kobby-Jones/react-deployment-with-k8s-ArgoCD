@@ -81,8 +81,8 @@ function SalesPropertySection() {
         </Row> */}
         <Row>
           {forSale.map((property,index) =>
-            Object.keys(property).map((propType) => (
-              <Col lg="4" className="mt-3" key={index}>
+            Object.keys(property).map((propType, i) => (
+              <Col lg="4" className="mt-3" key={index-i}>
                 <PropertiesCard
                   type={property[propType].type}
                   imageUrl={property[propType].image}
