@@ -1,3 +1,4 @@
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ServicesCard from './ServicesCard';
@@ -10,6 +11,7 @@ function ServicesRow() {
           <ServicesCard
             title={services.rentAndSell.title}
             text={services.rentAndSell.text}
+            icon = {faHouse}
           />
         </Col>
         <Col lg="4">

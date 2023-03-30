@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Card } from 'react-bootstrap';
+
 
 
 function ServicesCard(params) {
@@ -8,6 +11,7 @@ function ServicesCard(params) {
         <Card className='pt-3 mt-3'>
           <Card.Title>
             <div className="icon text-center">
+              <FontAwesomeIcon className='fs-2' icon={params.icon}/>
             </div>
             <div className="text-center">
               <h3>{params.title}</h3>
