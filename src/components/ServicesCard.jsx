@@ -9,7 +9,7 @@ function ServicesCard(params) {
       <div>
         <Card className='pt-3 mt-3'>
           <Card.Title>
-            <div className="icon text-center">
+            <div className="icon text-center mb-2">
               <FontAwesomeIcon className='fs-2' icon={params.icon}/>
             </div>
             <div className="text-center">
