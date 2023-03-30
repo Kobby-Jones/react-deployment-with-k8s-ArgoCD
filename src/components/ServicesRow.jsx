@@ -1,4 +1,4 @@
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faHouseLock } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ServicesCard from './ServicesCard';
@@ -18,6 +18,7 @@ function ServicesRow() {
           <ServicesCard
             title={services.propertyManagement.title}
             text={services.propertyManagement.text}
+            icon= {faHouseLock}
           />
         </Col>
         <Col lg="4">
