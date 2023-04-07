@@ -1,10 +1,17 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import ContactForm from './ContactForm';
+import contactBackground from '../img/property6.jpg'
 
 function ContactUs() {
     return (
-      <div>
+        <div
+            style={{
+                backgroundImage: `url(${contactBackground})`,
+                backgroundSize: 'cover',
+                backgroundAttachment: 'fixed'
+            }}
+            className='mt-5'>
         <Container>
           <Row>
             <Col className="ms-auto me-auto" lg="8">
