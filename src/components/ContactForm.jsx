@@ -5,6 +5,26 @@ import "../index.css";
 function ContactForm() {
 
     const [hover, setHover] = useState(false);
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    }
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+    }
+    const handleMessageChange = (event) => {
+        setMessage(event.target.value);
+    }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("Message submitted successfully!")
+        console.log(`Email: ${email}`);
+        console.log(`Name: ${name}`);
+        console.log(`${message}`);
+    }
 
     const handleMouseEnter = () => {
         setHover(true);
@@ -18,9 +38,8 @@ function ContactForm() {
         color: hover ? 'black' : "#fff",
         width: "100%"
     }
-
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="d-flex">
           <input
             style={{
@@ -28,6 +47,8 @@ function ContactForm() {
             }}
             className="rounded-3"
             type="name"
+            value={name}
+            onChange={handleNameChange}
             required
             placeholder="Name[Required]"
           />
@@ -47,6 +68,8 @@ function ContactForm() {
             }}
             className="rounded-3"
             type="email"
+            value={email}
+            onChange ={handleEmailChange}
             required
             placeholder="Email[Required]"
           />
@@ -81,6 +104,8 @@ function ContactForm() {
             placeholder="Message"
             cols="100"
             rows="7"
+            value={message}
+            onChange = {handleMessageChange}
             className="rounded-3"
           ></textarea>
         </div>
