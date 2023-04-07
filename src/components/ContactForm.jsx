@@ -18,7 +18,7 @@ function ContactForm() {
             }}
             className="ms-4 rounded-3"
             type="company"
-            placeholder="Company[Optional]"
+            placeholder="Company"
           />
         </div>
         <div className="d-flex mt-4">

@@ -4,7 +4,8 @@ import WhoWeAre from './WhoWeAre';
 
 function About() {
     return (
-      <section>
+      <section className='mb-3' 
+      >
         <Container>
            <WhoWeAre />
         </Container>

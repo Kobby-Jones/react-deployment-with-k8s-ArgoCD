@@ -11,7 +11,7 @@ function ContactUs() {
                 backgroundSize: 'cover',
                 backgroundAttachment: 'fixed'
             }}
-            className='mt-5'>
+            className='py-5'>
         <Container>
           <Row>
             <Col className="ms-auto me-auto" lg="8">

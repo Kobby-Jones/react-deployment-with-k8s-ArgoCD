@@ -2,18 +2,18 @@ import React from 'react';
 function WhoWeAre() {
     return (
       <div>
-        <div className="services-head text-center py-3">
-          <h3 className="text-uppercase">Who we are</h3>
+        <div className="services-head text-center">
+          <h3 className="text-uppercase text-light">Who we are</h3>
         </div>
         <div className="line">
-          <hr
+          <hr className='text-light'
             style={{
               width: "100%",
             }}
           />
         </div>
         <div className="text-center">
-          <p>
+          <p className='text-light'>
             At KJ Real Estate Agency Ltd, we're passionate about creating
             exceptional living spaces that meet the needs and desires of our
             clients. With years of experience in the industry, we're committed
