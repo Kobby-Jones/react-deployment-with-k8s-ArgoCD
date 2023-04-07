@@ -1,7 +1,26 @@
 import React from 'react';
+import { useState } from 'react';
+import "../index.css";
+
 function ContactForm() {
+
+    const [hover, setHover] = useState(false);
+
+    const handleMouseEnter = () => {
+        setHover(true);
+    }
+    const handleMouseLeave = () =>{
+        setHover(false);
+    }
+
+    const buttonStyle = {
+        backgroundColor: hover ? '#fff': 'rgb(12, 149, 151)',
+        color: hover ? 'black' : "#fff",
+        width: "100%"
+    }
+
     return (
-      <form action="">
+      <form>
         <div className="d-flex">
           <input
             style={{
@@ -64,6 +83,17 @@ function ContactForm() {
             rows="7"
             className="rounded-3"
           ></textarea>
+        </div>
+        <div className="mt-3">
+                <button
+                    className='rounded-3 button-hover text-uppercase fw-bold'
+                    style={buttonStyle}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave ={handleMouseLeave}
+            type="submit"
+          >
+            Send Message
+          </button>
         </div>
       </form>
     );
