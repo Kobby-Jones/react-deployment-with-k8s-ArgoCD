@@ -36,23 +36,35 @@ function ContactForm() {
               width: "50%",
             }}
             className="ms-4 rounded-3"
-                    type="tel"
-                    name='phone'
+            type="tel"
+            name="phone"
             required
             placeholder="Phone Number"
-                    
           />
-            </div>
-            <div className="mt-4">
-                <input
-                    style={{
-                        width:"100%"
-                    }}
-                    type="subject"
-                    className='rounded-3'
-                    placeholder='Subject[Reason for Contacting Us]'
-                />
-            </div>
+        </div>
+        <div className="mt-4">
+          <input
+            style={{
+              width: "100%",
+            }}
+            type="subject"
+            className="rounded-3"
+            placeholder="Subject[Reason for Contacting Us]"
+          />
+        </div>
+        <div className="mt-4">
+          <textarea
+            style={{
+              width: "100%",
+            }}
+            name="message"
+            id="message-area"
+            placeholder="Message"
+            cols="100"
+            rows="7"
+            className="rounded-3"
+          ></textarea>
+        </div>
       </form>
     );
 }
