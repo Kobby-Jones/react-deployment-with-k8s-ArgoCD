@@ -24,6 +24,7 @@ const HomePage = () => {
             <h1 className="text-light fw-bold text-uppercase">
               Discover your dream home
             </h1>
+            
             <p className="text-light my-4">
               KJ Real Estate Agency Ltd. is an Accra-based real estate
               business, offering quality solutions for all your property
