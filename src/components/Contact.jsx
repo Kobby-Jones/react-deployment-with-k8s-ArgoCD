@@ -14,7 +14,12 @@ function ContactUs() {
                   borderWidth: "3px",
                 }}
                 className="p-5"
-              >
+                >
+                <div className="cotact-us-header text-center mb-3">
+                    <h1 className="card-title">
+                        Contact Us
+                    </h1>
+                </div>
                 <ContactForm />
               </Card>
             </Col>
