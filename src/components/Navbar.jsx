@@ -1,5 +1,6 @@
 import React from 'react';
-import {Navbar, Nav, Button} from 'react-bootstrap'
+import { Navbar, Nav, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
  
 function CustomNavbar() {
     
@@ -9,15 +10,25 @@ function CustomNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto me-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
-            <Button className="ms-5" variant="warning">
-              For Rent
-            </Button>
-            <Button className="ms-5" variant="warning">
-              For Sale
-            </Button>
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+            <Link to="about" className="nav-link">
+              About Us
+            </Link>
+            <Link to="contact" className="nav-link">
+              Contact Us
+            </Link>
+            <Link to="rent" className="nav-link">
+              <Button className="ms-5" variant="warning">
+                For Rent
+              </Button>
+            </Link>
+            <Link to="sales" className="nav-link">
+              <Button className="ms-5" variant="warning">
+                For Sale
+              </Button>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
