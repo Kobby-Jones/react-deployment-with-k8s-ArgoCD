@@ -1,8 +1,8 @@
 
 import './App.css';
 import ContactUs from './components/Contact';
+import Footer from './components/Footer';
 import HomePage from './components/Home';
-import CustomNavbar from './components/Navbar';
 import RentPropertySection from './components/RentPropertiesSection';
 import SalesPropertySection from "./components/SalesPropertySection";
 import Services from './components/Services';
@@ -15,7 +15,6 @@ import Testimonials from './components/Testiminials';
 function App() {
   return (
     <div>
-      <CustomNavbar />
       {/* <Router>
         <ul>
           <li>
@@ -46,6 +45,7 @@ function App() {
       <RentPropertySection />
       <Services />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
