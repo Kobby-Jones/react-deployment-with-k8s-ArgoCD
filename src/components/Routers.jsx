@@ -5,7 +5,7 @@ import ServicesPageWithFooter from './ServicesPageWithFooter';
 import ContactPageWithFooter from './ContactPageWithFooter';
 import App from '../App';
 import RentPropertySection from './RentPropertiesSection';
-import SalesPropertySection from './SalesPropertySection';
+import SalesPageWithFooter from './SalesPageWithFooter';
 
 function Routers() {
     return (
@@ -16,7 +16,7 @@ function Routers() {
           <Route path="about" element={<ServicesPageWithFooter />} />
           <Route path="contact" element={<ContactPageWithFooter />} />
           <Route path="rent" element={<RentPropertySection />} />
-          <Route path="sales" element={<SalesPropertySection />} />
+          <Route path="sales" element={<SalesPageWithFooter />} />
         </Routes>
       </div>
     );
