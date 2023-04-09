@@ -4,8 +4,8 @@ import CustomNavbar from './Navbar'
 import ServicesPageWithFooter from './ServicesPageWithFooter';
 import ContactPageWithFooter from './ContactPageWithFooter';
 import App from '../App';
-import RentPropertySection from './RentPropertiesSection';
 import SalesPageWithFooter from './SalesPageWithFooter';
+import RentPageWithFooter from './RentPageWithFooter';
 
 function Routers() {
     return (
@@ -15,8 +15,8 @@ function Routers() {
           <Route path="/" element={<App />} />
           <Route path="about" element={<ServicesPageWithFooter />} />
           <Route path="contact" element={<ContactPageWithFooter />} />
-          <Route path="rent" element={<RentPropertySection />} />
           <Route path="sales" element={<SalesPageWithFooter />} />
+          <Route path="rent" element={<RentPageWithFooter />} />
         </Routes>
       </div>
     );
