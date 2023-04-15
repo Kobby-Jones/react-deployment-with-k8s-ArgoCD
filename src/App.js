@@ -45,6 +45,7 @@ function App() {
       <RentPropertySection />
       <Services />
       <ContactUs />
+     
       <Footer />
     </div>
   );

@@ -14,7 +14,10 @@ const HomePage = () => {
       }}
     >
       <Container>
-        <Row>
+        <Row style={{
+          
+            marginTop: "150px",
+        }}>
           <Col
             className="text-center p-3"
             style={{

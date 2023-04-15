@@ -5,13 +5,14 @@ import contactBackground from '../img/property6.jpg'
 
 function ContactUs() {
     return (
-        <div
-            style={{
-                backgroundImage: `url(${contactBackground})`,
-                backgroundSize: 'cover',
-                backgroundAttachment: 'fixed'
-            }}
-            className='py-5'>
+      <div
+        style={{
+          backgroundImage: `url(${contactBackground})`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
+        className="py-5"
+      >
         <Container>
           <Row>
             <Col className="ms-auto me-auto" lg="8">
@@ -19,13 +20,12 @@ function ContactUs() {
                 style={{
                   borderColor: "rgb(12, 149, 151)",
                   borderWidth: "3px",
+                  marginTop: "150px"
                 }}
                 className="p-5"
-                >
+              >
                 <div className="cotact-us-header text-center mb-3">
-                    <h1 className="card-title">
-                        Contact Us
-                    </h1>
+                  <h1 className="card-title">Contact Us</h1>
                 </div>
                 <ContactForm />
               </Card>

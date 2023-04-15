@@ -6,7 +6,9 @@ function About() {
     return (
       <section className='mb-3' 
       >
-        <Container>
+        <Container style={{
+          paddingTop: '150px',
+        }}>
            <WhoWeAre />
         </Container>
       </section>

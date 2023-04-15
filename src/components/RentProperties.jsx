@@ -7,19 +7,13 @@ import rentCondor_Image from "../img/image_3.jpg";
 
 const forRent = [
   {
-    singleFamHouse: {
-      type: "Single-Family House",
-      image: singleFamHouse_Image,
-      bedRooms: 3,
-      bathRooms: 2,
-      address: "1234 Main Street, Bantama",
-    },
     condo: {
       type: "Condo",
       image: condo_Image,
       bedRooms: 2,
       bathRooms: 2,
       address: "5678 Kings Avenue, Kof-Town",
+      id: 1,
     },
     townHouse: {
       type: "TownHouse",
@@ -27,6 +21,7 @@ const forRent = [
       bedRooms: 4,
       bathRooms: 3,
       address: "9101 Flint Street, Takoradi",
+      id: 2,
     },
     apartment: {
       type: "Apartment",
@@ -34,6 +29,7 @@ const forRent = [
       bedRooms: 1,
       bathRooms: 1,
       address: "1234 Main Street, Kumasi",
+      id: 3,
     },
     house: {
       type: "House",
@@ -41,6 +37,7 @@ const forRent = [
       bedRooms: 3,
       bathRooms: 2,
       address: "5678 Park Avenue, Sunyani",
+      id: 4,
     },
     condo2: {
       type: "Condo",
@@ -48,6 +45,15 @@ const forRent = [
       bedRooms: 1,
       bathRooms: 1,
       address: "9101 Oak Street, East Legon",
+      id: 5,
+    },
+    singleFamHouse: {
+      type: "Single-Family House",
+      image: singleFamHouse_Image,
+      bedRooms: 3,
+      bathRooms: 2,
+      address: "1234 Main Street, Bantama",
+      id: 6,
     },
   },
 ];
