@@ -1,8 +1,8 @@
 import React from "react";
 import forRent from "./RentProperties";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import backgroundImage from "../img/background_img_1.jpg";
-import PropertiesCard from "./PropertiesCard";
+import { Link } from 'react-router-dom';
 
 function RentPropertySection() {
   return (
@@ -25,24 +25,32 @@ function RentPropertySection() {
       </div>
       <Container>
         <Row>
-          {forRent.map((property, index) =>
-            Object.keys(property).map((propType, i) => (
-              <Col lg="4" className="mt-3" key={index - i}>
-                <PropertiesCard
-                  type={property[propType].type}
-                  imageUrl={property[propType].image}
-                  address={property[propType].address}
-                  bedRooms={property[propType].bedRooms}
-                  bathRooms={property[propType].bathRooms}
-                  id={property[propType].id}
+          {forRent.map((property) => (
+            <Col lg="4" className="mt-3" key={property.id}>
+              <Card className="text-center p-3">
+                <Card.Img
+                  variant="top"
+                  alt="House Image"
+                  src={property.image}
                 />
-              </Col>
-            ))
-          )}
+                <Card.Body>
+                  <Card.Title>{property.type}</Card.Title>
+                  <Card.Text>{property.address}</Card.Text>
+                  <Card.Text>
+                    {property.bedRooms} Bedrooms | {property.bathRooms} Bathrooms{" "}
+                  </Card.Text>
+                  <Link to={`rent-details/${property.id}`}>
+                    <Button variant="primary">View Property</Button>
+                  </Link>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>
   );
 }
+
 
 export default RentPropertySection;

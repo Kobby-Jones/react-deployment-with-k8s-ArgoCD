@@ -6,11 +6,11 @@ import ContactPageWithFooter from './ContactPageWithFooter';
 import App from '../App';
 import SalesPageWithFooter from './SalesPageWithFooter';
 import RentPageWithFooter from './RentPageWithFooter';
-// import PropertyDetails from './PropertiesDetails';
-// import image from '../img/image_5.jpg'
+import RentDetails from './RentDetails';
+import SalesDetails from './SalesDetails';
 function Routers() {
     return (
-        <div>
+      <div>
         <CustomNavbar />
         <Routes>
           <Route path="/" element={<App />} />
@@ -18,6 +18,9 @@ function Routers() {
           <Route path="/contact" element={<ContactPageWithFooter />} />
           <Route path="/sales" element={<SalesPageWithFooter />} />
           <Route path="/rent" element={<RentPageWithFooter />} />
+          <Route path="/rent-details/:id" element={<RentDetails />} />
+          <Route path="/sales-details/:id" element={<SalesDetails />} />
+          
         </Routes>
       </div>
     );

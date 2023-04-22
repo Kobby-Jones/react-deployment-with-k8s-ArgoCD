@@ -1,23 +1,24 @@
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 
-function PropertiesCard(props) {
 
- 
-  
+
+function PropertiesCard({type, imageUrl, bathRooms, bedRooms, address, propertyId}) {
+
     return (
       <Card className="text-center p-3">
-        <Card.Img variant="top" alt="House Image" src={props.imageUrl} />
+        <Card.Img variant="top" alt="House Image" src={imageUrl} />
         <Card.Body>
-          <Card.Title>{props.type}</Card.Title>
-          <Card.Text>{props.address}</Card.Text>
+          <Card.Title>{type}</Card.Title>
+          <Card.Text>{address}</Card.Text>
           <Card.Text>
-            {props.bedRooms} Bedrooms | {props.bathRooms} Bathrooms{" "}
+            {bedRooms} Bedrooms | {bathRooms} Bathrooms{" "}
           </Card.Text>
-          <Button variant="primary">
-              View Property
-          </Button>
+          <Link to="details">
+            <Button variant="primary">View Property</Button>
+          </Link>
         </Card.Body>
       </Card>
     );
