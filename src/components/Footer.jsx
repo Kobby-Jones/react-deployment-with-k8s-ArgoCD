@@ -1,12 +1,13 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
       <footer className="bg-dark py-4">
         <Container>
           <Row>
-            <Col lg="6">
+            <Col lg="4">
               <div className="text-center">
                 <h1 className="text-light">About Us</h1>
               </div>
@@ -20,7 +21,7 @@ function Footer() {
                 </p>
               </div>
             </Col>
-            <Col>
+            <Col lg='4'>
               <div className="text-center">
                 <h1 className="text-light">Contact Us</h1>
               </div>
@@ -32,6 +33,16 @@ function Footer() {
                   <li className="text-light">info@kobbyjrealestate.com</li>
                 </ul>
               </div>
+            </Col>
+            <Col lg='4 text-center'>
+              <ul className='list-unstyled'>
+                <li><Link className='text-decoration-none fs-5 text-secondary' to='/'>Home</Link></li>
+                <li><Link className='text-decoration-none fs-5 text-secondary' to='/about'>About Us</Link></li>
+                <li><Link className='text-decoration-none fs-5 text-secondary' to='/contact'>Contact Us</Link></li>
+                <li><Link className='text-decoration-none fs-5 text-secondary' to='/sales'>For Sale</Link></li>
+                <li><Link className='text-decoration-none fs-5 text-secondary' to='/rent'>For Rent</Link></li>
+                <li><Link className='text-decoration-none fs-5 text-secondary' to='/about'>Blog</Link></li>
+              </ul>
             </Col>
           </Row>
           <div className="line">

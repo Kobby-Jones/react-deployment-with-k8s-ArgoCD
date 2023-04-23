@@ -1,8 +1,12 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import backgroundImage from '../img/image_2.jpg'
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       className="d-flex align-items-center justify-content-center"

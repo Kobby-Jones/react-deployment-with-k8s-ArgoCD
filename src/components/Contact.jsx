@@ -2,8 +2,12 @@ import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import ContactForm from './ContactForm';
 import contactBackground from '../img/property6.jpg'
+import { useEffect } from "react";
 
 function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     return (
       <div
         style={{

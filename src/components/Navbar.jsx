@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 function CustomNavbar() {
     
     return (
-      <Navbar bg="dark" className="px-5 py-4 fixed-top" variant="dark" expand="md">
+      <Navbar  className="px-5 py-4 fixed-top" variant="dark" expand="md">
         <Navbar.Brand href="#">KJ Real Estate Agency Ltd.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -20,12 +20,12 @@ function CustomNavbar() {
               Contact Us
             </NavLink>
             <NavLink to="rent" className="nav-link">
-              <Button className="ms-5" variant="warning">
+              <Button className="ms-5" variant="primary">
                 For Rent
               </Button>
             </NavLink>
             <NavLink to="sales" className="nav-link">
-              <Button className="ms-5" variant="warning">
+              <Button className="ms-5" variant="primary">
                 For Sale
               </Button>
             </NavLink>

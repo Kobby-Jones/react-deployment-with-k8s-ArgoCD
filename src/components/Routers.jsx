@@ -13,14 +13,14 @@ function Routers() {
       <div>
         <CustomNavbar />
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/about" element={<ServicesPageWithFooter />} />
-          <Route path="/contact" element={<ContactPageWithFooter />} />
-          <Route path="/sales" element={<SalesPageWithFooter />} />
-          <Route path="/rent" element={<RentPageWithFooter />} />
-          <Route path="/rent-details/:id" element={<RentDetails />} />
-          <Route path="/sales-details/:id" element={<SalesDetails />} />
-          
+        
+            <Route path="/" element={<App />} />
+            <Route path="/about" element={<ServicesPageWithFooter />} />
+            <Route path="/contact" element={<ContactPageWithFooter />} />
+            <Route path="/sales" element={<SalesPageWithFooter />} />
+            <Route path="/rent" element={<RentPageWithFooter />} />
+            <Route path="/rent-details/:id" element={<RentDetails />} />
+            <Route path="/sales-details/:id" element={<SalesDetails />} />
         </Routes>
       </div>
     );

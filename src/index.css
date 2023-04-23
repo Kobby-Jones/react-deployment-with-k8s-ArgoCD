@@ -11,14 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+nav{
+  background-color: rgb(73, 62, 62) !important;
+}
 nav a.nav-link.active{
   color: orangered !important;
 }
-nav button{
-  background-color: orangered !important;
-  border: orangered !important;
-  color: white !important;
-}
 nav a.nav-link:hover{
   color: orangered !important;
+}
+
+@media only screen and (max-width: 600px) {
+  nav{
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  nav{
+    text-align: center;
+  }
 }

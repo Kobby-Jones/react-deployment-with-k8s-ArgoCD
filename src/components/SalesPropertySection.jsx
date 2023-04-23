@@ -3,8 +3,12 @@ import forSale from './saleProperties'
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import backgroundImage from "../img/image_5.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function SalesPropertySection() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section
       className="bg-info py-5"

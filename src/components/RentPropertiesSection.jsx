@@ -3,8 +3,12 @@ import forRent from "./RentProperties";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import backgroundImage from "../img/background_img_1.jpg";
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
 
 function RentPropertySection() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section
       className="bg-info py-5"
