@@ -3,7 +3,13 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import forSale from "./saleProperties";
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
+import { useEffect } from "react";
+
+
 function SalesDetails() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { id } = useParams();
   const item = forSale.find((property) => property.id.toString() === id);
   if (!item) {
