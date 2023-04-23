@@ -20,6 +20,7 @@ function Routers() {
             <Route path="/sales" element={<SalesPageWithFooter />} />
             <Route path="/rent" element={<RentPageWithFooter />} />
             <Route path='/rent/rent-details/:id' element={<RentDetails />} />
+            <Route path='/sales/sales-details/:id' element={<SalesDetails />} />
             <Route path="/rent-details/:id" element={<RentDetails />} />
             <Route path="/sales-details/:id" element={<SalesDetails />} />
         </Routes>
