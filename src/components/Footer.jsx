@@ -1,15 +1,19 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { GrFacebook, GrTwitter, GrInstagram } from 'react-icons/gr'
+import { FaWhatsappSquare } from 'react-icons/fa';
 
 function Footer() {
     return (
       <footer className="bg-dark py-4">
         <Container>
           <Row>
-            <Col lg="4">
+            <Col lg="3">
               <div className="text-center">
-                <h1 className="text-light">About Us</h1>
+                <h5 className="text-light text-uppercase text-decoration-underline">
+                  About Us
+                </h5>
               </div>
               <div className="text-center">
                 <p className="text-light">
@@ -21,9 +25,11 @@ function Footer() {
                 </p>
               </div>
             </Col>
-            <Col lg='4'>
+            <Col lg="3">
               <div className="text-center">
-                <h1 className="text-light">Contact Us</h1>
+                <h5 className="text-light text-uppercase text-decoration-underline">
+                  Contact Us
+                </h5>
               </div>
               <div className="text-center">
                 <ul className="list-unstyled">
@@ -34,15 +40,97 @@ function Footer() {
                 </ul>
               </div>
             </Col>
-            <Col lg='4 text-center'>
-              <ul className='list-unstyled'>
-                <li><Link className='text-decoration-none fs-5 text-secondary' to='/'>Home</Link></li>
-                <li><Link className='text-decoration-none fs-5 text-secondary' to='/about'>About Us</Link></li>
-                <li><Link className='text-decoration-none fs-5 text-secondary' to='/contact'>Contact Us</Link></li>
-                <li><Link className='text-decoration-none fs-5 text-secondary' to='/sales'>For Sale</Link></li>
-                <li><Link className='text-decoration-none fs-5 text-secondary' to='/rent'>For Rent</Link></li>
-                <li><Link className='text-decoration-none fs-5 text-secondary' to='/about'>Blog</Link></li>
+            <Col lg="3" className="text-center">
+              <div className="text-center">
+                <h5 className="text-uppercase text-light text-decoration-underline">
+                  Information
+                </h5>
+              </div>
+              <ul className="list-unstyled">
+                <li>
+                  <Link
+                    className="text-decoration-none fs-5 text-secondary"
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-decoration-none fs-5 text-secondary"
+                    to="/about"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-decoration-none fs-5 text-secondary"
+                    to="/contact"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-decoration-none fs-5 text-secondary"
+                    to="/sales"
+                  >
+                    For Sale
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-decoration-none fs-5 text-secondary"
+                    to="/rent"
+                  >
+                    For Rent
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-decoration-none fs-5 text-secondary"
+                    to="/about"
+                  >
+                    Blog
+                  </Link>
+                </li>
               </ul>
+            </Col>
+            <Col lg="3">
+              <div className="text-center">
+                <h5 className="text-light text-uppercase text-decoration-underline">
+                  Social Media
+                </h5>
+              </div>
+              <div className="text-center">
+                <a href="https://facebook.com" rel="noreferrer" target="_blank">
+                  <GrFacebook className="me-3" size={32} color="#1877f2" />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <GrInstagram
+                    className="me-3"
+                    size={32}
+                    color="white"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom right, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)",
+                    }}
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/Kobby_jones1"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <GrTwitter size={32} className='me-3' color="#1DA1F2" />
+                </a>
+                <a href="whatsapp.com"><FaWhatsappSquare size={32} /></a>
+              </div>
             </Col>
           </Row>
           <div className="line">
