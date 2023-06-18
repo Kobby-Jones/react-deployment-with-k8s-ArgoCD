@@ -3,9 +3,9 @@ import { Navbar, Nav, Button } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
  
 function CustomNavbar() {
-    
+
     return (
-      <Navbar  className="px-5 py-4 fixed-top" variant="dark" expand="md">
+      <Navbar className="px-5 py-4 fixed-top" variant="dark" expand="md">
         <Navbar.Brand href="#">KJ Real Estate Agency Ltd.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

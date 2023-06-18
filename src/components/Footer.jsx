@@ -127,9 +127,17 @@ function Footer() {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <GrTwitter size={32} className='me-3' color="#1DA1F2" />
+                  <GrTwitter size={32} className="me-3" color="#1DA1F2" />
                 </a>
-                <a href="whatsapp.com"><FaWhatsappSquare size={32} /></a>
+                <a href="whatsapp.com">
+                  <FaWhatsappSquare
+                    size={32}
+                    color="#ffffff"
+                    style={{
+                      backgroundColor: "#25D366",
+                    }}
+                  />
+                </a>
               </div>
             </Col>
           </Row>
