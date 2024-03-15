@@ -1,9 +1,9 @@
-import retirementHome_Image from '../img/luxury_villa.jpg'
-import townHouse_Image from '../img/rent_img_1.jpg'
-import mobileHouse_Image from '../img/rent_img_2.jpg'
-import houseBoat_Image from '../img/luxury_villa_2.jpg'
-import coHouse_Image from '../img/rent_img_3.jpg'
-import earthSheltered_Image from '../img/luxury_villa_3.jpg'
+import retirementHome_Image from "../../img/luxury_villa.jpg";
+import townHouse_Image from '../../img/rent_img_1.jpg'
+import mobileHouse_Image from '../../img/rent_img_2.jpg'
+import houseBoat_Image from '../../img/luxury_villa_2.jpg'
+import coHouse_Image from '../../img/rent_img_3.jpg'
+import earthSheltered_Image from '../../img/luxury_villa_3.jpg'
 
 const forSale = [
   {

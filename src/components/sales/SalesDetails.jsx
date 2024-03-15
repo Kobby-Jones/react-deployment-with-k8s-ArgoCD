@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import forSale from "./saleProperties";
 import { Link, useParams } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import { useEffect } from "react";
 
 

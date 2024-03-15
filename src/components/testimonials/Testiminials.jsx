@@ -1,6 +1,6 @@
 import React from 'react';
 import TestimonialRow from './TestimonialRow';
-import backgroundImage from '../img/image_3.jpg'
+import backgroundImage from "../../img/image_3.jpg";
 
  
 const Testimonials = () => {

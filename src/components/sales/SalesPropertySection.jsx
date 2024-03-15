@@ -1,11 +1,11 @@
 import React from "react";
-import forRent from "./RentProperties";
+import forSale from './saleProperties'
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import backgroundImage from "../img/background_img_1.jpg";
-import { Link } from 'react-router-dom';
+import backgroundImage from "../../img/image_5.jpg";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-function RentPropertySection() {
+function SalesPropertySection() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,11 +25,11 @@ function RentPropertySection() {
           marginTop: "100px",
         }}
       >
-        <h2 className="mb-3 text-light fw-bolder">Properties For Rent</h2>
+        <h2 className="mb-3 text-light fw-bolder">Properties For Sale</h2>
       </div>
       <Container>
         <Row>
-          {forRent.map((property) => (
+          {forSale.map((property) => (
             <Col lg="4" className="mt-3" key={property.id}>
               <Card className="text-center p-3">
                 <Card.Img
@@ -41,9 +41,10 @@ function RentPropertySection() {
                   <Card.Title>{property.type}</Card.Title>
                   <Card.Text>{property.address}</Card.Text>
                   <Card.Text>
-                    {property.bedRooms} Bedrooms | {property.bathRooms} Bathrooms{" "}
+                    {property.bedRooms} Bedrooms | {property.bathRooms}{" "}
+                    Bathrooms{" "}
                   </Card.Text>
-                  <Link to={`rent-details/${property.id}`}>
+                  <Link to={`sales-details/${property.id}`}>
                     <Button variant="primary">View Property</Button>
                   </Link>
                 </Card.Body>
@@ -56,5 +57,4 @@ function RentPropertySection() {
   );
 }
 
-
-export default RentPropertySection;
+export default SalesPropertySection;

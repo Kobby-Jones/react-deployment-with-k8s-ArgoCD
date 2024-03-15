@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import "../index.css";
 import axios from 'axios'
-
+import "../../../src/index.css"
 function ContactForm() {
 
   const [hover, setHover] = useState(false);
@@ -45,7 +44,7 @@ function ContactForm() {
         company: company,
         message: message,
       };  
-      const response = await axios.post("http://localhost:4000/customers", userData)
+      const response = await axios.post("http://localhost:5000/customers", userData)
       console.log(response.data)
       const newData = [...formData, ...response.data]
       setFormData(newData)

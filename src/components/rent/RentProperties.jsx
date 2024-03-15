@@ -1,9 +1,9 @@
-import singleFamHouse_Image from "../img/image_6.jpg";
-import condo_Image from "../img/image_1.jpg";
-import townHouse_Image from "../img/image_8.jpg";
-import apartment_Image from "../img/image_5.jpg";
-import house_Image from "../img/header_img_1.jpg";
-import rentCondor_Image from "../img/image_3.jpg";
+import singleFamHouse_Image from "../../img/image_6.jpg";
+import condo_Image from "../../img/image_1.jpg";
+import townHouse_Image from "../../img/image_8.jpg";
+import apartment_Image from "../../img/image_5.jpg";
+import house_Image from "../../img/header_img_1.jpg";
+import rentCondor_Image from "../../img/image_3.jpg";
 
 const forRent = [
   {
