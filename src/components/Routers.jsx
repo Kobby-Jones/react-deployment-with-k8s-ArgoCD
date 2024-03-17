@@ -8,6 +8,8 @@ import SalesPageWithFooter from "../components/sales/SalesPageWithFooter";
 import RentPageWithFooter from "../components/rent/RentPageWithFooter";
 import RentDetails from "../components/rent/RentDetails";
 import SalesDetails from "../components/sales/SalesDetails";
+import Agents from "./agents/Agents";
+
 function Routers() {
   return (
     <div>
@@ -15,6 +17,7 @@ function Routers() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<ServicesPageWithFooter />} />
+        <Route path="/agents" element={<Agents />} />
         <Route path="/contact" element={<ContactPageWithFooter />} />
         <Route path="/sales" element={<SalesPageWithFooter />} />
         <Route path="/rent" element={<RentPageWithFooter />} />

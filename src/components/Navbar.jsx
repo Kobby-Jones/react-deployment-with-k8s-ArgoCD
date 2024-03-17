@@ -19,7 +19,7 @@ function CustomNavbar() {
             <NavLink to="contact" className="nav-link">
               Contact Us
             </NavLink>
-            <NavLink to="contact" className="nav-link">
+            <NavLink to="agents" className="nav-link">
               Agents
             </NavLink>
             <NavLink to="rent" className="nav-link">
