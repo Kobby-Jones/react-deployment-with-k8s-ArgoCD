@@ -19,6 +19,9 @@ function CustomNavbar() {
             <NavLink to="contact" className="nav-link">
               Contact Us
             </NavLink>
+            <NavLink to="contact" className="nav-link">
+              Agents
+            </NavLink>
             <NavLink to="rent" className="nav-link">
               <Button className="ms-5" variant="primary">
                 For Rent

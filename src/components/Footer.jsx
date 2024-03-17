@@ -146,7 +146,7 @@ function Footer() {
           </div>
           <div className="text-center">
             <h6 className="text-light">
-              Coppyright &copy; 2023, Kobby-J Real-Estate Ltd.
+              Copyright &copy; 2023, Kobby-J Real-Estate Ltd.
             </h6>
           </div>
           <div className="text-center">
