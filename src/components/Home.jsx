@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import backgroundImage from '../img/image_2.jpg'
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   useEffect(() => {
@@ -39,7 +40,10 @@ const HomePage = () => {
               Accra area, Kobby-Jones is the team to trust. With years of
               experience, we ensure you get the best value for your money.
             </p>
+            <Link to="about">
             <Button variant="primary">Read More</Button>
+            </Link>
+            
           </Col>
         </Row>
       </Container>
