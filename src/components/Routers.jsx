@@ -9,6 +9,7 @@ import RentPageWithFooter from "../components/rent/RentPageWithFooter";
 import RentDetails from "../components/rent/RentDetails";
 import SalesDetails from "../components/sales/SalesDetails";
 import Agents from "./agents/Agents";
+import BlogPage from "./blog/Blog";
 
 function Routers() {
   return (
@@ -25,6 +26,7 @@ function Routers() {
         <Route path="/sales/sales-details/:id" element={<SalesDetails />} />
         <Route path="/rent-details/:id" element={<RentDetails />} />
         <Route path="/sales-details/:id" element={<SalesDetails />} />
+        <Route path="blog" element={<BlogPage />} />
       </Routes>
     </div>
   );
