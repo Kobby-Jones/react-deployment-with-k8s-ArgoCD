@@ -4,6 +4,10 @@ import townHouse_Image from "../../img/image_8.jpg";
 import apartment_Image from "../../img/image_5.jpg";
 import house_Image from "../../img/header_img_1.jpg";
 import rentCondor_Image from "../../img/image_3.jpg";
+import video1 from "../../img/video1.mp4"
+import video2 from "../../img/video2.mp4"
+import video3 from "../../img/video3.mp4"
+import video4 from "../../img/video4.mp4"
 
 const forRent = [
   {
@@ -11,6 +15,7 @@ const forRent = [
     image: condo_Image,
     bedRooms: 2,
     bathRooms: 2,
+    video : video1,
     address: "5678 Kings Avenue, Kof-Town",
     id: 1,
     description:
@@ -21,6 +26,7 @@ const forRent = [
     image: townHouse_Image,
     bedRooms: 4,
     bathRooms: 3,
+    video : video2,
     address: "9101 Flint Street, Takoradi",
     id: 2,
     description:
@@ -31,6 +37,7 @@ const forRent = [
     image: apartment_Image,
     bedRooms: 1,
     bathRooms: 1,
+    video : video3,
     address: "1234 Main Street, Kumasi",
     id: 3,
     description:
@@ -41,6 +48,7 @@ const forRent = [
     image: house_Image,
     bedRooms: 3,
     bathRooms: 2,
+    video : video4,
     address: "5678 Park Avenue, Sunyani",
     id: 4,
     description:
@@ -51,6 +59,7 @@ const forRent = [
     image: rentCondor_Image,
     bedRooms: 1,
     bathRooms: 1,
+    video : video1,
     address: "9101 Oak Street, East Legon",
     id: 5,
     description:
@@ -61,6 +70,7 @@ const forRent = [
     image: singleFamHouse_Image,
     bedRooms: 3,
     bathRooms: 2,
+    video: video1,
     address: "1234 Main Street, Bantama",
     id: 6,
     description:

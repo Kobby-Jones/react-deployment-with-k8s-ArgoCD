@@ -4,7 +4,6 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import backgroundImage from "../../img/background_img_1.jpg";
 import { Link } from 'react-router-dom';
 import { useEffect } from "react";
-
 function RentPropertySection() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,7 +30,7 @@ function RentPropertySection() {
         <Row>
           {forRent.map((property) => (
             <Col lg="4" className="mt-3" key={property.id}>
-              <Card className="text-center p-3">
+                <Card className="text-center p-3">
                 <Card.Img
                   variant="top"
                   alt="House Image"
@@ -48,6 +47,7 @@ function RentPropertySection() {
                   </Link>
                 </Card.Body>
               </Card>
+                
             </Col>
           ))}
         </Row>
