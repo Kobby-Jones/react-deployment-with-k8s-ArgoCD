@@ -1,6 +1,7 @@
 import { Card, Carousel, Col, Container, Row } from 'react-bootstrap';
 import React from 'react';
 import forRent from './rent/RentProperties';
+import backgroundImage from '../img/luxury_villa_2.jpg'
 
 function Sliders() {
   let slideArray = [];
@@ -10,7 +11,9 @@ function Sliders() {
   console.log(slideArray)
 
   return ( 
-    <section>
+    <section style={{
+      backgroundImage : `url(${backgroundImage}`
+    }}>
       <Container>
         <Row>
           <Col lg='8' className='ms-auto me-auto'>

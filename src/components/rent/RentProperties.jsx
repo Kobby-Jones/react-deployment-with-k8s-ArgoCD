@@ -8,6 +8,7 @@ import video1 from "../../img/video1.mp4"
 import video2 from "../../img/video2.mp4"
 import video3 from "../../img/video3.mp4"
 import video4 from "../../img/video4.mp4"
+import video5 from "../../img/video5.mp4"
 
 const forRent = [
   {
@@ -63,7 +64,7 @@ const forRent = [
     image: rentCondor_Image,
     bedRooms: 2,
     bathRooms: 2,
-    video : video1,
+    video : video5,
     address: "9101 Oak Street, East Legon",
     id: 35,
     description:
@@ -75,7 +76,7 @@ const forRent = [
     image: singleFamHouse_Image,
     bedRooms: 3,
     bathRooms: 3,
-    video: video1,
+    video: video5,
     address: "1234 Main Street, Bantama",
     id: 36,
     description:

@@ -1,9 +1,9 @@
 import React from "react";
 import forSale from './saleProperties'
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import backgroundImage from "../../img/image_5.jpg";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import PropertiesCard from "../PropertiesCard";
 
 function SalesPropertySection() {
   useEffect(() => {
@@ -31,24 +31,7 @@ function SalesPropertySection() {
         <Row>
           {forSale.map((property) => (
             <Col lg="4" className="mt-3" key={property.id}>
-              <Card className="text-center p-3">
-                <Card.Img
-                  variant="top"
-                  alt="House Image"
-                  src={property.image}
-                />
-                <Card.Body>
-                  <Card.Title>{property.type}</Card.Title>
-                  <Card.Text>{property.address}</Card.Text>
-                  <Card.Text>
-                    {property.bedRooms} Bedrooms | {property.bathRooms}{" "}
-                    Bathrooms{" "}
-                  </Card.Text>
-                  <Link to={`sales-details/${property.id}`}>
-                    <Button variant="primary">View Property</Button>
-                  </Link>
-                </Card.Body>
-              </Card>
+              <PropertiesCard type={property.type} imageUrl={property.image} bathRooms={property.bathRooms} bedRooms={property.bedRooms} address={property.address}/>
             </Col>
           ))}
         </Row>
