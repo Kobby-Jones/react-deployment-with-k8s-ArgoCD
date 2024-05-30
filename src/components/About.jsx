@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import WhoWeAre from './WhoWeAre';
 import { useEffect } from "react";
 
+
 function About() {
 useEffect(() => {
   window.scrollTo(0, 0);

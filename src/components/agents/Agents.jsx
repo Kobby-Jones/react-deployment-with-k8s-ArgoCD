@@ -30,7 +30,7 @@ function AgentPage() {
           {agents.map((agent) => (
             <Col lg = "4" className='pt-3' key={agent.id}>
                 <Card>
-                    <Card.Img
+                    <Card.Img className='circle-img'
                     src={agent.photo}
                     variant='top'
                     alt = {agent.name}

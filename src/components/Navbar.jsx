@@ -1,12 +1,32 @@
-import React from 'react';
-import { Navbar, Nav} from 'react-bootstrap'
+import React, { useState } from 'react';
+import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
+import logo from '../img/Dreamscape logo.png'
  
 function CustomNavbar() {
 
+
+  const [hover, setHover] = useState(false);
+
+  const handleMouseEnter = () =>{
+    setHover(true)
+  }
+  const handleMouseLeave = () =>{
+    setHover(false)
+  }
+
     return (
-      <Navbar className="px-5 fs-5 text-uppercase py-4 fixed-top" variant="dark" expand="md">
-        <Navbar.Brand href="#">KJ Real Estate Agency Ltd.</Navbar.Brand>
+      <Navbar className="px-5 fs-5 py-4 fixed-top" variant="dark" expand="md">
+        <Navbar.Brand href="#home">
+          <img
+            src={`${logo}`}
+            width="60"
+            height="60"
+            className="d-inline-block align-center rounded-circle"
+            alt="Dreamscape"
+          />
+          <strong className='mx-4'>Dreamscape Real Estate Ltd.</strong>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto me-auto">
@@ -16,17 +36,23 @@ function CustomNavbar() {
             <NavLink to="about" className="nav-link">
               About Us
             </NavLink>
+            <NavDropdown onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} title = "Listing" show= {hover}>
+              <NavDropdown.Item>
+              <NavLink to="rent" className="nav-link text-dark">
+                For Rent
+            </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+              <NavLink to="sales" className="nav-link text-dark">
+                For Sale
+            </NavLink>
+              </NavDropdown.Item>
+            </NavDropdown>
             <NavLink to="contact" className="nav-link">
               Contact Us
             </NavLink>
             <NavLink to="agents" className="nav-link">
               Agents
-            </NavLink>
-            <NavLink to="rent" className="nav-link">
-                For Rent
-            </NavLink>
-            <NavLink to="sales" className="nav-link">
-                For Sale
             </NavLink>
             <NavLink to="blog" className="nav-link">
                 Blog

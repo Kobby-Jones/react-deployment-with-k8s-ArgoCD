@@ -1,7 +1,9 @@
 import React from 'react';
 function WhoWeAre() {
     return (
-      <div>
+      <div style={{
+        backgroundColor: 'rgba(0,0,0,0.7)'
+      }}>
         <div className="services-head text-center">
           <h3 className="text-uppercase text-light">Who we are</h3>
         </div>

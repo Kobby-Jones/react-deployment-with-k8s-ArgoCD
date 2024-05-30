@@ -2,12 +2,15 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ServicesRow from "./ServicesRow";
 import About from "../About";
+import backgroundImage from '../../img/background_img_1.jpg'
 
 function Services() {
   return (
     <div
       style={{
-        backgroundColor: "rgba(0,0,0,0.5)",
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
       }}
     >
       <Container className="py-4">
