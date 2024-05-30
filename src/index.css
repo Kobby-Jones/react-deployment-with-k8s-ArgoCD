@@ -12,13 +12,22 @@ code {
     monospace;
 }
 nav{
-  background-color: rgb(73, 62, 62) !important;
+  background-color: #004AAD !important;
 }
 nav a.nav-link.active{
-  color: orangered !important;
+  color: #FF914D !important;
 }
 nav a.nav-link:hover{
-  color: orangered !important;
+  color: #FF914D !important;
+  box-shadow: none;
+}
+button{
+  background-color:#FF914D !important;
+  border: none #FF914D !important;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: #004AAD !important;
 }
 footer .text-secondary:hover{
 color: white !important;

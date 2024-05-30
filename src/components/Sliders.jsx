@@ -3,13 +3,19 @@ import React from 'react';
 import forRent from './rent/RentProperties';
 
 function Sliders() {
+  let slideArray = [];
+  for(let i = 0; i<=4; i++){
+    slideArray.push(forRent[i])
+  }
+  console.log(slideArray)
+
   return ( 
     <section>
       <Container>
         <Row>
           <Col lg='8' className='ms-auto me-auto'>
           <Carousel>
-            {forRent.map((item) =>(
+            {slideArray.map((item) =>(
               <Carousel.Item data-bs-theme="dark" key={item.id}>
               <Card>
               <Card.Img 
@@ -23,7 +29,9 @@ function Sliders() {
                   height= '400px'
                   width='100%'
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className='rounded-3' style={{
+                  backgroundColor:'rgba(0, 74, 173, 0.7)'
+                }}>
                 <Card.Title>{item.type}</Card.Title>
                   <Card.Text>{item.address}</Card.Text>
                   <Card.Text>

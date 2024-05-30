@@ -41,7 +41,7 @@ const HomePage = () => {
               experience, we ensure you get the best value for your money.
             </p>
             <Link to="about">
-            <Button variant="primary">Read More</Button>
+            <Button>Read More</Button>
             </Link>
             
           </Col>

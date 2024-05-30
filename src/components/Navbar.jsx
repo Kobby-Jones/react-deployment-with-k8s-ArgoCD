@@ -16,7 +16,7 @@ function CustomNavbar() {
   }
 
     return (
-      <Navbar className="px-5 fs-5 py-4 fixed-top" variant="dark" expand="md">
+      <Navbar style={{backgroundColor:'#004AAD !important'}} className="px-5 fs-5 py-4 fixed-top" variant="dark" expand="md">
         <Navbar.Brand href="#home">
           <img
             src={`${logo}`}
@@ -29,7 +29,7 @@ function CustomNavbar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto me-auto">
+          <Nav  className="ms-auto me-auto">
             <NavLink to="/" className="nav-link">
               Home
             </NavLink>
