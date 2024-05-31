@@ -76,7 +76,7 @@ const forRent = [
     image: singleFamHouse_Image,
     bedRooms: 3,
     bathRooms: 3,
-    video: video5,
+    video: video1,
     address: "1234 Main Street, Bantama",
     id: 36,
     description:

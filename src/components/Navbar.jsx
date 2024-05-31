@@ -25,7 +25,7 @@ function CustomNavbar() {
             className="d-inline-block align-center rounded-circle"
             alt="Dreamscape"
           />
-          <strong className='mx-4'>Dreamscape Real Estate Ltd.</strong>
+          <strong className='mx-4 brand-font text-uppercase'>Dreamscape Real Estate Ltd.</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

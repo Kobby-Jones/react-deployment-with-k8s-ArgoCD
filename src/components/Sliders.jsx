@@ -1,7 +1,7 @@
-import { Card, Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Carousel, Col, Container, Row } from 'react-bootstrap';
 import React from 'react';
 import forRent from './rent/RentProperties';
-import backgroundImage from '../img/luxury_villa_2.jpg'
+import { Link } from 'react-router-dom';
 
 function Sliders() {
   let slideArray = [];
@@ -11,9 +11,7 @@ function Sliders() {
   console.log(slideArray)
 
   return ( 
-    <section style={{
-      backgroundImage : `url(${backgroundImage}`
-    }}>
+    <section>
       <Container>
         <Row>
           <Col lg='8' className='ms-auto me-auto'>
@@ -40,6 +38,10 @@ function Sliders() {
                   <Card.Text>
                     {item.bedRooms} Bedrooms | {item.bathRooms} Bathrooms{" "}
                   </Card.Text>
+                  <Link to={`rent-details/${item.id}`}>
+                  <Button>View property</Button>
+                  </Link>
+                  
                 </Carousel.Caption>
               </Card>
             </Carousel.Item>
