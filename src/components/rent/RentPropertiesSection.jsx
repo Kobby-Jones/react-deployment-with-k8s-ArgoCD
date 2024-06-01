@@ -30,7 +30,7 @@ function RentPropertySection() {
         <Row>
           {forRent.map((property) => (
             <Col lg="4" className="mt-3" key={property.id}>
-                <Card className="text-center p-3">
+                <Card className="text-center p-3" data-aos="zoom-in-right">
                 <Card.Img
                   variant="top"
                   alt="House Image"

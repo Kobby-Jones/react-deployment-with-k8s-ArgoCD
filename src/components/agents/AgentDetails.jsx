@@ -75,7 +75,7 @@ const agents = [
       email: "lauren.garcia@example.com",
       phone: "+1 (555) 345-6789",
       bio: "Lauren's attention to detail and strong negotiation skills make her a trusted advisor for her clients.",
-      photo: "https://randomuser.me/api/portraits/men/31.jpg",
+      photo: "https://randomuser.me/api/portraits/women/31.jpg",
       specialties: ["Negotiation", "Marketing"],
       languages: ["English", "Spanish"]
     },
