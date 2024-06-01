@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import agents from './AgentDetails';
 import backgroundImage from '../../img/background_img_1.jpg'
 import Footer from '../Footer';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 function AgentPage() {
-  const [data, getData] = useState(null)
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    try{
-      const response = axios.get('https://randomuser.me/api/?results=15')
-      getData(response.results)
-    }catch(error){
-      console.log(error)
-    }
+
   }, []);
-  
-    console.log(data)
   return ( 
     <>
     <section  className="bg-info py-5"
@@ -61,7 +52,7 @@ function AgentPage() {
                         {agent.bio}
                       </Card.Text>
                     </Card.Body>
-                    <Link to={''}>
+                    <Link to={`agents-listing/${agent.id}`}>
                     <Button>View Listings</Button>
                     </Link>
                 </Card>

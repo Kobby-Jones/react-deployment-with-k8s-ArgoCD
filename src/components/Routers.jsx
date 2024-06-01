@@ -10,6 +10,7 @@ import RentDetails from "../components/rent/RentDetails";
 import SalesDetails from "../components/sales/SalesDetails";
 import Agents from "./agents/Agents";
 import BlogPage from "./blog/Blog";
+import AgentListing from "./agents/AgentsListing";
 
 function Routers() {
   return (
@@ -27,6 +28,7 @@ function Routers() {
         <Route path="/rent-details/:id" element={<RentDetails />} />
         <Route path="/sales-details/:id" element={<SalesDetails />} />
         <Route path="blog" element={<BlogPage />} />
+        <Route path="agents/agents-listing/:agent_id" element = { <AgentListing/> } />
       </Routes>
     </div>
   );
