@@ -12,7 +12,7 @@ function AgentListing() {
     }, []);
 
     return (
-        <section className="bg-info mt-5">
+        <section style={{height: '100vh'}} className="bg-info mt-5">
             <Container className="py-5">
                 <Row className="py-5">
                     {agent_properties.map((property) => (
