@@ -34,11 +34,11 @@ import img27 from "../../img/sales/27.jpg"
 import img28 from "../../img/sales/28.jpg"
 import img29 from "../../img/sales/29.jpg"
 import img30 from "../../img/sales/30.jpg"
-import img31 from "../../img/sales/30.jpg"
-import img32 from "../../img/sales/30.jpg"
-import img33 from "../../img/sales/30.jpg"
-import img34 from "../../img/sales/30.jpg"
-import img35 from "../../img/sales/30.jpg"
+import img31 from "../../img/sales/31.jpg"
+import img32 from "../../img/sales/32.jpg"
+import img33 from "../../img/sales/33.jpg"
+import img34 from "../../img/sales/34.jpg"
+import img35 from "../../img/sales/35.jpg"
 
 const forSale = [
       {
