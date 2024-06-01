@@ -1,11 +1,11 @@
 import React from "react";
-import forSale from './saleProperties'
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import backgroundImage from "../../img/image_5.jpg";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-function SalesPropertySection() {
+function SalesPropertySection({type, heading}) {
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,11 +25,11 @@ function SalesPropertySection() {
           marginTop: "100px",
         }}
       >
-        <h2 className="mb-3 text-light fw-bolder">Properties For Sale</h2>
+        <h2 className="mb-3 text-light fw-bolder">{heading}</h2>
       </div>
       <Container>
         <Row>
-          {forSale.map((property) => (
+          {type.map((property) => (
             <Col lg="4" className="mt-3" key={property.id}>
               <Card className="text-center p-3" data-aos="zoom-in-right">
                 <Card.Img

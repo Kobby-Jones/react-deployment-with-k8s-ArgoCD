@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../Footer";
 import RentPropertySection from './RentPropertiesSection';
 import { useEffect } from "react";
+import forRent from "./RentProperties";
 
 function RentPageWithFooter() {
 
@@ -10,7 +11,7 @@ useEffect(() => {
 }, []);
   return (
     <div>
-      <RentPropertySection />
+      <RentPropertySection type={forRent} heading={"Properties For Rent"} />
       <Footer />
     </div>
   );

@@ -1,10 +1,11 @@
 import React from "react";
-import forRent from "./RentProperties";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import backgroundImage from "../../img/background_img_1.jpg";
 import { Link } from 'react-router-dom';
 import { useEffect } from "react";
-function RentPropertySection() {
+
+
+function RentPropertySection({type, heading}) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,11 +25,11 @@ function RentPropertySection() {
           marginTop: "100px",
         }}
       >
-        <h2 className="mb-3 text-light fw-bolder">Properties For Rent</h2>
+        <h2 className="mb-3 text-light fw-bolder">{heading}</h2>
       </div>
       <Container>
         <Row>
-          {forRent.map((property) => (
+          {type.map((property) => (
             <Col lg="4" className="mt-3" key={property.id}>
                 <Card className="text-center p-3" data-aos="zoom-in-right">
                 <Card.Img

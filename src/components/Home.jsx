@@ -5,6 +5,7 @@ import backgroundImage from '../img/image_2.jpg'
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
