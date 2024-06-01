@@ -4,6 +4,41 @@ import mobileHouse_Image from '../../img/rent_img_2.jpg'
 import houseBoat_Image from '../../img/luxury_villa_2.jpg'
 import coHouse_Image from '../../img/rent_img_3.jpg'
 import earthSheltered_Image from '../../img/luxury_villa_3.jpg'
+import img1 from "../../img/sales/1.jpg"
+import img2 from "../../img/sales/2.jpg"
+import img3 from "../../img/sales/3.jpg"
+import img4 from "../../img/sales/4.jpg"
+import img5 from "../../img/sales/5.jpg"
+import img6 from "../../img/sales/6.jpg"
+import img7 from "../../img/sales/7.jpg"
+import img8 from "../../img/sales/8.jpg"
+import img9 from "../../img/sales/9.jpg"
+import img10 from "../../img/sales/10.jpg"
+import img11 from "../../img/sales/11.jpg"
+import img12 from "../../img/sales/12.jpg"
+import img13 from "../../img/sales/13.jpg"
+import img14 from "../../img/sales/14.jpg"
+import img15 from "../../img/sales/15.jpg"
+import img16 from "../../img/sales/16.jpg"
+import img17 from "../../img/sales/17.jpg"
+import img18 from "../../img/sales/18.jpg"
+import img19 from "../../img/sales/19.jpg"
+import img20 from "../../img/sales/20.jpg"
+import img21 from "../../img/sales/21.jpg"
+import img22 from "../../img/sales/22.jpg"
+import img23 from "../../img/sales/23.jpg"
+import img24 from "../../img/sales/24.jpg"
+import img25 from "../../img/sales/25.jpg"
+import img26 from "../../img/sales/26.jpg"
+import img27 from "../../img/sales/27.jpg"
+import img28 from "../../img/sales/28.jpg"
+import img29 from "../../img/sales/29.jpg"
+import img30 from "../../img/sales/30.jpg"
+import img31 from "../../img/sales/30.jpg"
+import img32 from "../../img/sales/30.jpg"
+import img33 from "../../img/sales/30.jpg"
+import img34 from "../../img/sales/30.jpg"
+import img35 from "../../img/sales/30.jpg"
 
 const forSale = [
       {
@@ -74,7 +109,7 @@ const forSale = [
   },
     {
       type: "Apartment",
-      image: "apartment_image7.jpg",
+      image: img1,
       bedRooms: 2,
       bathRooms: 2,
       address: "333 Pine Street, Pinehurst",
@@ -84,7 +119,7 @@ const forSale = [
     },
     {
       type: "Condo",
-      image: "condo_image7.jpg",
+      image: img2,
       bedRooms: 3,
       bathRooms: 2,
       address: "444 Birch Road, Birchfield",
@@ -94,7 +129,7 @@ const forSale = [
     },
     {
       type: "House",
-      image: "house_image7.jpg",
+      image: img3,
       bedRooms: 4,
       bathRooms: 3,
       address: "555 Cedar Lane, Cedarville",
@@ -104,7 +139,7 @@ const forSale = [
     },
     {
       type: "Townhouse",
-      image: "townhouse_image7.jpg",
+      image: img4,
       bedRooms: 3,
       bahRooms: 2,
       address: "666 Oak Street, Oakdale",
@@ -114,7 +149,7 @@ const forSale = [
     },
     {
       type: "Villa",
-      image: "villa_image7.jpg",
+      image: img5,
       bedRooms: 5,
       bathRooms: 4,
       adress: "777 Palm Avenue, Palmdale",
@@ -124,7 +159,7 @@ const forSale = [
     },
     {
       type: "Apartment",
-      image: "apartment_image8.jpg",
+      image: img6,
       bedRooms: 1,
       bathRooms: 1,
       adress: "888 Elm Street, Elmdale",
@@ -134,7 +169,7 @@ const forSale = [
     },
     {
       type: "Condo",
-      image: "condo_image8.jpg",
+      image: img7,
       bedRooms: 2,
       bathRooms: 2,
       adress: "999 Maple Avenue, Maplefield",
@@ -144,7 +179,7 @@ const forSale = [
     },
     {
       type: "House",
-      image: "house_image8.jpg",
+      image: img8,
       bedRooms: 3,
       bathRooms: 2,
       adress: "1010 Willow Lane, Willowdale",
@@ -154,7 +189,7 @@ const forSale = [
     },
     {
       type: "Townhouse",
-      image: "townhouse_image8.jpg",
+      image: img9,
       bedRooms: 4,
       bathRooms: 3,
       adress: "1111 Birch Street, Birchville",
@@ -164,7 +199,7 @@ const forSale = [
     },
     {
       type: "Villa",
-      image: "villa_image8.jpg",
+      image: img10,
       bedRooms: 6,
       bathRooms: 5,
       address: "1212 Palm Lane, Palmtree",
@@ -174,7 +209,7 @@ const forSale = [
     },
     {
       type: "Apartment",
-      image: "apartment_image9.jpg",
+      image: img11,
       bedRooms: 2,
       bathRooms: 2,
       adress: "1313 Pine Street, Pinewood",
@@ -184,7 +219,7 @@ const forSale = [
     },
     {
       type: "Condo",
-      image: "condo_image9.jpg",
+      image: img12,
       bedRooms: 3,
       bahRooms: 2,
       address: "1414 Maple Avenue, Mapleton",
@@ -194,7 +229,7 @@ const forSale = [
 },
 {
 type: "House",
-image: "house_image9.jpg",
+image: img13,
 bedRooms: 4,
 bathRooms: 3,
 address: "1515 Willow Street, Willowwood",
@@ -204,7 +239,7 @@ agent_id: 13
 },
 {
 type: "Townhouse",
-image: "townhouse_image9.jpg",
+image: img14,
 bedRooms: 3,
 bathRoom: 2,
 address: "1616 Cedar Avenue, Cedartown",
@@ -214,7 +249,7 @@ agent_id: 14
 },
 {
 type: "Villa",
-image: "villa_image9.jpg",
+image: img15,
 bedRooms: 5,
 bathRooms: 4,
 address:"1717 Palm Street, Palmwood",
@@ -224,7 +259,7 @@ agent_id: 15
 },
 {
 type: "Apartment",
-image: "apartment_image10.jpg",
+image: img16,
 bedRooms: 1,
 bathRooms: 1,
 adress: "1818 Elm Avenue, Elmdale Heights",
@@ -234,7 +269,7 @@ agent_id: 6
 },
 {
 type: "Condo",
-image: "condo_image10.jpg",
+image: img17,
 bedRooms: 2,
 bahRooms: 2,
 address: "1919 Maple Street, Maplewood Heights",
@@ -244,7 +279,7 @@ agent_id: 7
 },
 {
 type: "House",
-image: "house_image10.jpg",
+image: img18,
 bedRooms: 3,
 bahRooms: 2,
 address: "2020 Willow Lane, Willow Grove",
@@ -254,7 +289,7 @@ agent_id: 10
 },
 {
 type: "Townhouse",
-image: "townhouse_image10.jpg",
+image: img19,
 bedRooms: 4,
 bathRooms: 3,
 adress: "2121 Birch Street, Birchwood Park",
@@ -264,7 +299,7 @@ agent_id: 9
 },
 {
 type: "Villa",
-image: "villa_image10.jpg",
+image:img20,
 bedRooms: 6,
 bathRooms: 5,
 address: "2222 Palm Avenue, Palmdale Park",
@@ -274,7 +309,7 @@ agent_id: 2
 },
 {
 type: "Apartment",
-image: "apartment_image11.jpg",
+image: img21,
 bedRooms: 2,
 bathRooms: 2,
 adress: "2323 Pine Street, Pineville Place",
@@ -284,7 +319,7 @@ agent_id: 1
 },
 {
 type: "Condo",
-image: "condo_image11.jpg",
+image: img22,
 bedRooms: 3,
 bahRooms: 2,
 address: "2424 Maple Avenue, Mapleton Manor",
@@ -294,7 +329,7 @@ agent_id: 15
 },
 {
 type: "House",
-image: "house_image11.jpg",
+image: img23,
 bedRooms: 4,
 bahRooms: 3,
 address: "2525 Willow Lane, Willowwood Estates",
@@ -304,7 +339,7 @@ agent_id: 3
 },
 {
 type: "Townhouse",
-image: "townhouse_image11.jpg",
+image: img24,
 bedRooms: 3,
 bathRooms: 2,
 adress: "2626 Cedar Avenue, Cedar Creek",
@@ -314,7 +349,7 @@ agent_id: 4
 },
 {
 type: "Villa",
-image: "villa_image11.jpg",
+image: img25,
 bedRooms: 5,
 bathRooms: 4,
 address: "2727 Palm Street, Palmwood Place",
@@ -324,7 +359,7 @@ agent_id: 5
 },
 {
 type: "Apartment",
-image: "apartment_image12.jpg",
+image: img26,
 bedRooms: 1,
 bathRooms: 1,
 address: "2828 Elm Avenue, Elmtree Heights",
@@ -334,7 +369,7 @@ agent_id: 6
 },
 {
 type: "Condo",
-image: "condo_image12.jpg",
+image: img27,
 bedRooms: 2,
 bathRooms: 2,
 address: "2929 Maple Street, Maplewood Estates",
@@ -344,7 +379,7 @@ description: "Welcome to Maplewood Estates' premier condo community. This elegan
 },
 {
 type: "House",
-image: "house_image12.jpg",
+image: img28,
 bedRooms: 3,
 bathRooms: 2,
 address: "3030 Willow Lane, Willowwood Hills",
@@ -354,7 +389,7 @@ description: "Nestled in the heart of Willowwood Hills, this charming house offe
 },
 {
 type: "Townhouse",
-image: "townhouse_image12.jpg",
+image: img29,
 bedRooms: 4,
 bathRooms: 3,
 address: "3131 Birch Street, Birchwood Gardens",
@@ -364,7 +399,7 @@ description: "Experience contemporary living in our stylish townhouse located in
 },
 {
 type: "Villa",
-image: "villa_image12.jpg",
+image: img30,
 bedRooms: 6,
 bathRooms: 5,
 address: "3232 Palm Avenue, Palmdale Heights",
@@ -374,7 +409,7 @@ agent_id: 10
 },
 {
 type: "Apartment",
-image: "apartment_image13.jpg",
+image: img31,
 bedRooms: 2,
 bathRooms: 2,
 address: "3333 Pine Street, Pinewood Place",
@@ -384,7 +419,7 @@ agent_id: 1
 },
 {
 type: "Condo",
-image: "condo_image13.jpg",
+image: img32,
 bedRooms: 3,
 bathRooms: 2,
 address: "3434 Maple Avenue, Mapleton Heights",
@@ -394,7 +429,7 @@ description: "Experience luxury living in our spacious three-bedroom condo locat
 },
 {
 type: "House",
-image: "house_image13.jpg",
+image: img33,
 bedRooms: 4,
 bathRooms: 3,
 address: "3535 Willow Lane, Willowwood Meadows",
@@ -404,7 +439,7 @@ description: "Welcome to Willowwood Meadows' finest family home. This spacious h
 },
 {
 type: "Townhouse",
-image: "townhouse_image13.jpg",
+image: img34,
 bedRooms: 3,
 bathRooms: 2,
 address: "3636 Cedar Avenue, Cedar Heights",
@@ -414,7 +449,7 @@ description: "Live in style in our chic townhouse located in the desirable commu
 },
 {
 type: "Villa",
-image: "villa_image13.jpg",
+image: img35,
 bedRooms: 5,
 bathRooms: 4,
 address: "3737 Palm Street, Palmwood Gardens",
