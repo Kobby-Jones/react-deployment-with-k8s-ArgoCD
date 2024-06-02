@@ -27,7 +27,7 @@ const TestimonialCard = () => {
           <Col lg="4" key={customer.id}>
           <Card className='text-center p-3 mb-3'>
             <Row>
-              <Col lg="4" className='ms-auto me-auto'>
+              <Col lg="4" sm = "4" className='ms-auto me-auto'>
               <Card.Img className='rounded-circle' src= {customer.image} />
               </Col>
             </Row>

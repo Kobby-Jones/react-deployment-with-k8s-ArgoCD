@@ -2,7 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { Container, Row, Col, Button, Carousel } from 'react-bootstrap';
 import video1 from '../img/home-background1.mp4';
-import video2 from '../img/home-background3.mp4';
+import video2 from '../img/home-background2.mp4';
+import video3 from '../img/home-background3.mp4';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -51,11 +52,35 @@ const HomePage = () => {
                 Are you looking for the perfect place to spend your vacation? Look no further than Dreamscape Real Estate Agency Ltd., your trusted partner in finding idyllic vacation properties in the beautiful city of Accra. Whether you seek a serene retreat or an adventurous getaway, we offer a diverse selection of vacation homes tailored to meet all your needs.
                 With years of expertise in the Accra real estate market, our experienced team is dedicated to helping you find the ideal vacation property that aligns with your dreams. Imagine waking up to stunning ocean views, relaxing in luxurious amenities, and exploring the vibrant local culture—all from the comfort of your vacation home.
                 </p>
-                <Carousel.Caption>
-        <Link to="about">
+                <Link to="about">
                   <Button>Read More</Button>
                 </Link>
-        </Carousel.Caption>
+                <Carousel.Caption>
+                </Carousel.Caption>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="video-container">
+          <video autoPlay muted loop className="background-video">
+            <source src={video3} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <Container>
+            <Row style={{ marginTop: "150px" }}>
+              <Col className="text-center py-5" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+                <h1 className="text-light fw-bold text-uppercase">Meet the Expert Agents at Dreamscape</h1>
+                <p className="text-light my-4">
+                At Dreamscape Real Estate Agency Ltd., our success is driven by our exceptional team of dedicated and knowledgeable agents. Each of our agents is committed to providing personalized and professional service, ensuring that your real estate journey is smooth and rewarding.
+                Our agents possess a deep understanding of the Accra real estate market, backed by years of experience and continuous training. Their extensive knowledge enables them to offer valuable insights and guidance, helping you make informed decisions whether you're buying, renting, or investing.
+                </p>
+                <Link to="about">
+                  <Button>Read More</Button>
+                </Link>
+                <Carousel.Caption>
+                </Carousel.Caption>
               </Col>
             </Row>
           </Container>
