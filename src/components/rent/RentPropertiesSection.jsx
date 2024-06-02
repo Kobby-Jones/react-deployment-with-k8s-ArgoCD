@@ -36,6 +36,7 @@ function RentPropertySection({type, heading}) {
                   variant="top"
                   alt="House Image"
                   src={property.image}
+                  height = "300px"
                 />
                 <Card.Body>
                   <Card.Title>{property.type}</Card.Title>

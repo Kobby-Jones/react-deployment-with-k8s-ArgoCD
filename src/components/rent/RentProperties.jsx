@@ -9,6 +9,36 @@ import video2 from "../../img/video2.mp4"
 import video3 from "../../img/video3.mp4"
 import video4 from "../../img/video4.mp4"
 import video5 from "../../img/video5.mp4"
+import img1 from '../../img/rent/1.jpg'
+import img2 from '../../img/rent/2.jpg'
+import img3 from '../../img/rent/3.jpg'
+import img4 from '../../img/rent/4.jpg'
+import img5 from '../../img/rent/5.jpg'
+import img6 from '../../img/rent/6.jpg'
+import img7 from '../../img/rent/7.jpg'
+import img8 from '../../img/rent/8.jpg'
+import img9 from '../../img/rent/9.jpg'
+import img10 from '../../img/rent/10.jpg'
+import img11 from '../../img/rent/11.jpg'
+import img12 from '../../img/rent/12.jpg'
+import img13 from '../../img/rent/13.jpg'
+import img14 from '../../img/rent/14.jpg'
+import img15 from '../../img/rent/15.jpg'
+import img16 from '../../img/rent/16.jpg'
+import img17 from '../../img/rent/17.jpg'
+import img18 from '../../img/rent/18.jpg'
+import img19 from '../../img/rent/19.jpg'
+import img20 from '../../img/rent/20.jpg'
+import img21 from '../../img/rent/21.jpg'
+import img22 from '../../img/rent/22.jpg'
+import img23 from '../../img/rent/23.jpg'
+import img24 from '../../img/rent/24.jpg'
+import img25 from '../../img/rent/25.jpg'
+import img26 from '../../img/rent/26.jpg'
+import img27 from '../../img/rent/27.jpg'
+import img28 from '../../img/rent/28.jpg'
+import img29 from '../../img/rent/29.jpg'
+import img30 from '../../img/rent/30.jpg'
 
 const forRent = [
   {
@@ -85,7 +115,7 @@ const forRent = [
   },
   {
     type: "Condo",
-    image: "condo_image1.jpg",
+    image: img1,
     bedRooms: 3,
     bathRooms: 3,
     address: "5678 Kings Avenue, Kof-Town",
@@ -95,7 +125,7 @@ const forRent = [
   },
   {
     type: "House",
-    image: "house_image1.jpg",
+    image: img2,
     bedRooms: 4,
     bathRooms: 3,
     address: "1234 Maple Street, Maplewood",
@@ -105,7 +135,7 @@ const forRent = [
   },
   {
     type: "Apartment",
-    image: "apartment_image1.jpg",
+    image: img3,
     bedRooms: 2,
     bathRooms: 2,
     address: "789 Oak Lane, Oakville",
@@ -115,7 +145,7 @@ const forRent = [
   },
   {
     type: "Townhouse",
-    image: "townhouse_image1.jpg",
+    image: img4,
     bedRooms: 3,
     bathRooms: 2,
     address: "456 Pine Street, Pine City",
@@ -125,7 +155,7 @@ const forRent = [
   },
   {
     type: "Villa",
-    image: "villa_image1.jpg",
+    image: img5,
     bedRooms: 5,
     bathRooms: 4,
     address: "321 Cedar Drive, Cedar Town",
@@ -135,7 +165,7 @@ const forRent = [
   },
   {
     type: "Condo",
-    image: "condo_image2.jpg",
+    image: img6,
     bedRooms: 2,
     bathRooms: 2,
     address: "654 Birch Road, Birchwood",
@@ -145,7 +175,7 @@ const forRent = [
   },
   {
     type: "House",
-    image: "house_image2.jpg",
+    image: img7,
     bedRooms: 4,
     bathRooms: 3,
     address: "789 Willow Lane, Willowville",
@@ -155,7 +185,7 @@ const forRent = [
   },
   {
     type: "Apartment",
-    image: "apartment_image2.jpg",
+    image: img8,
     bedRooms: 1,
     bathRooms: 1,
     address: "101 Elm Street, Elm City",
@@ -165,7 +195,7 @@ const forRent = [
   },
   {
     type: "Townhouse",
-    image: "townhouse_image2.jpg",
+    image: img9,
     bedRooms: 3,
     bathRooms: 3,
     address: "202 Spruce Avenue, Sprucetown",
@@ -175,7 +205,7 @@ const forRent = [
   },
   {
     type: "Villa",
-    image: "villa_image2.jpg",
+    image: img10,
     bedRooms: 4,
     bathRooms: 3,
     address: "303 Palm Drive, Palm Beach",
@@ -185,7 +215,7 @@ const forRent = [
   },
   {
     type: "Condo",
-    image: "condo_image3.jpg",
+    image: img11,
     bedRooms: 3,
     bathRooms: 3,
     address: "404 Maple Street, Maple City",
@@ -195,7 +225,7 @@ const forRent = [
   },
   {
     type: "House",
-    image: "house_image3.jpg",
+    image: img12,
     bedRooms: 5,
     bathRooms: 4,
     address: "505 Oak Lane, Oaktown",
@@ -205,7 +235,7 @@ const forRent = [
   },
   {
     type: "Apartment",
-    image: "apartment_image3.jpg",
+    image: img13,
     bedRooms: 2,
     bathRooms: 2,
     address: "606 Pine Street, Pineville",
@@ -215,7 +245,7 @@ const forRent = [
   },
   {
     type: "Townhouse",
-    image: "townhouse_image3.jpg",
+    image: img14,
     bedRooms: 3,
     bathRooms: 3,
     address: "707 Birch Road, Birch City",
@@ -225,7 +255,7 @@ const forRent = [
   },
   {
     type: "Villa",
-    image: "villa_image3.jpg",
+    image: img15,
     bedRooms: 5,
     bathRooms: 4,
     address: "808 Palm Drive, Palm City",
@@ -235,7 +265,7 @@ const forRent = [
   },
   {
     type: "Condo",
-    image: "condo_image4.jpg",
+    image: img16,
     bedRooms: 2,
     bathRooms: 2,
     address: "909 Maple Street, Maple Grove",
@@ -245,7 +275,7 @@ const forRent = [
   },
   {
     type: "House",
-    image: "house_image4.jpg",
+    image: img17,
     bedRooms: 4,
     bathRooms: 3,
     address: "1010 Willow Lane, Willow Park",
@@ -255,7 +285,7 @@ const forRent = [
   },
   {
     type: "Apartment",
-    image: "apartment_image4.jpg",
+    image: img18,
     bedRooms: 1,
     bathRooms: 1,
     address: "1111 Elm Street, Elm Grove",
@@ -265,7 +295,7 @@ const forRent = [
   },
   {
     type: "Townhouse",
-    image: "townhouse_image4.jpg",
+    image: img19,
     bedRooms: 3,
     bathRooms: 3,
     address: "1212 Spruce Avenue, Spruce Grove",
@@ -275,7 +305,7 @@ const forRent = [
   },
   {
     type: "Villa",
-    image: "villa_image4.jpg",
+    image: img20,
     bedRooms: 4,
     bathRooms: 3,
     address: "1313 Palm Drive, Palm Valley",
@@ -285,7 +315,7 @@ const forRent = [
   },
   {
     type: "Condo",
-    image: "condo_image5.jpg",
+    image: img21,
     bedRooms: 3,
     bathRooms: 3,
     address: "1414 Maple Street, Maple Hills",
@@ -295,7 +325,7 @@ const forRent = [
   },
   {
     type: "House",
-    image: "house_image5.jpg",
+    image: img22,
     bedRooms: 5,
     bathRooms: 4,
     address: "1515 Oak Lane, Oakwood",
@@ -305,7 +335,7 @@ const forRent = [
   },
   {
     type: "Apartment",
-    image: "apartment_image5.jpg",
+    image: img23,
     bedRooms: 2,
     bathRooms: 2,
     address: "1616 Pine Street, Pine Forest",
@@ -315,7 +345,7 @@ const forRent = [
   },
   {
     type: "Townhouse",
-    image: "townhouse_image5.jpg",
+    image: img24,
     bedRooms: 3,
     bathRooms: 3,
     address: "1717 Birch Road, Birchwood",
@@ -325,7 +355,7 @@ const forRent = [
   },
   {
     type: "Villa",
-    image: "villa_image5.jpg",
+    image: img25,
     bedRooms: 5,
     bathRooms: 4,
     address: "1818 Palm Drive, Palm Beach Gardens",
@@ -335,7 +365,7 @@ const forRent = [
   },
   {
     type: "Condo",
-    image: "condo_image6.jpg",
+    image: img26,
     bedRooms: 2,
     bathRooms: 2,
     address: "1919 Maple Street, Maple Town",
@@ -345,7 +375,7 @@ const forRent = [
   },
   {
     type: "House",
-    image: "house_image6.jpg",
+    image: img27,
     bedRooms: 4,
     bathRooms: 3,
     address: "2020 Willow Lane, Willow Creek",
@@ -355,7 +385,7 @@ const forRent = [
   },
   {
     type: "Apartment",
-    image: "apartment_image6.jpg",
+    image: img28,
     bedRooms: 1,
     bathRooms: 1,
     address: "2121 Elm Street, Elm Heights",
@@ -365,7 +395,7 @@ const forRent = [
   },
   {
     type: "Townhouse",
-    image: "townhouse_image6.jpg",
+    image: img29,
     bedRooms: 3,
     bathRooms: 3,
     address: "2222 Spruce Avenue, Spruce City",
@@ -375,7 +405,7 @@ const forRent = [
   },
   {
     type: "Villa",
-    image: "villa_image6.jpg",
+    image: img30,
     bedRooms: 4,
     bathRooms: 3,
     address: "2323 Palm Drive, Palm Shores",
