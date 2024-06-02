@@ -5,7 +5,6 @@ import HomePage from "./components/Home";
 import RentPropertySection from "./components/rent/RentPropertiesSection";
 import SalesPropertySection from "./components/sales/SalesPropertySection";
 import Services from "./components/services/Services";
-import Sliders from './components/Sliders'
 import 'animate.css'
 import { useEffect } from "react";
 import Aos from "aos";
@@ -34,7 +33,7 @@ function App() {
   return (
     <div>
       <HomePage />
-      <Sliders />
+      {/* <Sliders /> */}
       <TestimonialCard />
       <SalesPropertySection  type={topSales} heading={"Top Sales Properties"}/>
       <RentPropertySection type={topRent} heading={"Top Rent Properties"} />

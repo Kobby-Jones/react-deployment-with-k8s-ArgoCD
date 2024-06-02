@@ -27,6 +27,7 @@ function AgentPage() {
         }}
       >
         <h2 className="mb-3 text-light fw-bolder">Meet Our Agents</h2>
+        <p className='text-light'>At <strong>Dreamscape</strong>, our team of professional agents is here to guide you through every step of your real estate journey. Whether you're buying your first home, selling a property, or looking for an investment opportunity, our experienced agents are committed to providing exceptional service and expert advice. Get to know our team below and find the perfect agent to help you achieve your real estate goals.</p>
       </div>
     <Container className='text-center'>
       <Row>

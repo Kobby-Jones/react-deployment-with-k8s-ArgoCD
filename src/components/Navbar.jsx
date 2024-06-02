@@ -20,8 +20,8 @@ function CustomNavbar() {
         <Navbar.Brand href="#home">
           <img
             src={`${logo}`}
-            width="60"
-            height="60"
+            width="50"
+            height="50"
             className="d-inline-block align-center rounded-circle"
             alt="Dreamscape"
           />

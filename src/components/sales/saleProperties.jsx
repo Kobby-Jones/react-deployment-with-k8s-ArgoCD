@@ -152,7 +152,7 @@ const forSale = [
       image: img5,
       bedRooms: 5,
       bathRooms: 4,
-      adress: "777 Palm Avenue, Palmdale",
+      address: "777 Palm Avenue, Palmdale",
       id: 5,
       description: "Escape to luxury in our magnificent villa situated in the serene surroundings of Palmdale. This exquisite property boasts five bedrooms, four bathrooms, and breathtaking views of the surrounding landscape. Enjoy resort-style living with amenities such as a private pool, spa, and outdoor entertainment area.",
       agent_id: 5
@@ -162,7 +162,7 @@ const forSale = [
       image: img6,
       bedRooms: 1,
       bathRooms: 1,
-      adress: "888 Elm Street, Elmdale",
+      address: "888 Elm Street, Elmdale",
       id: 6,
       description: "Discover the pinnacle of urban living in our stylish one-bedroom apartment located in the heart of Elmdale. This modern residence offers sleek finishes, ample natural light, and access to amenities such as a fitness center and rooftop terrace. With its central location, you'll have easy access to dining, shopping, and entertainment options.",
       agent_id: 6
@@ -172,7 +172,7 @@ const forSale = [
       image: img7,
       bedRooms: 2,
       bathRooms: 2,
-      adress: "999 Maple Avenue, Maplefield",
+      address: "999 Maple Avenue, Maplefield",
       id: 7,
       description: "Welcome to Maplefield's premier condo community. This elegant two-bedroom condo features luxurious finishes and panoramic views of the surrounding landscape. Residents enjoy access to a range of amenities, including a fitness center, swimming pool, and landscaped gardens.",
       agent_id: 7
@@ -182,7 +182,7 @@ const forSale = [
       image: img8,
       bedRooms: 3,
       bathRooms: 2,
-      adress: "1010 Willow Lane, Willowdale",
+      address: "1010 Willow Lane, Willowdale",
       id: 8,
       description: "Nestled in the heart of Willowdale, this charming house offers three bedrooms, two bathrooms, and a warm, inviting atmosphere. Featuring a spacious backyard and modern amenities, it's the perfect place to call home. Conveniently located near schools, parks, and shopping centers.",
       agent_id: 8
@@ -192,7 +192,7 @@ const forSale = [
       image: img9,
       bedRooms: 4,
       bathRooms: 3,
-      adress: "1111 Birch Street, Birchville",
+      address: "1111 Birch Street, Birchville",
       id: 9,
       description: "Experience contemporary living in our stylish townhouse located in the vibrant community of Birchville. This spacious residence boasts four bedrooms, three bathrooms, and an open-concept layout. Enjoy the convenience of nearby amenities, including parks, schools, and recreational facilities.",
       agent_id: 9
@@ -212,7 +212,7 @@ const forSale = [
       image: img11,
       bedRooms: 2,
       bathRooms: 2,
-      adress: "1313 Pine Street, Pinewood",
+      address: "1313 Pine Street, Pinewood",
       id: 11,
       description: "Discover modern living in our contemporary two-bedroom apartment located in the sought-after neighborhood of Pinewood. This stylish residence offers sleek finishes, spacious living areas, and access to amenities such as a fitness center and outdoor terrace. With its central location, you'll have easy access to dining, shopping, and entertainment options.",
       agent_id: 11
@@ -260,9 +260,9 @@ agent_id: 15
 {
 type: "Apartment",
 image: img16,
-bedRooms: 1,
-bathRooms: 1,
-adress: "1818 Elm Avenue, Elmdale Heights",
+bedRooms: 3,
+bathRooms: 3,
+address: "1818 Elm Avenue, Elmdale Heights",
 id: 16,
 description: "Experience urban living at its finest in our stylish one-bedroom apartment located in Elmdale Heights. This modern residence offers sleek finishes, ample natural light, and access to amenities such as a fitness center and rooftop terrace. With its central location, you'll have easy access to dining, shopping, and entertainment options.",
 agent_id: 6
@@ -292,7 +292,7 @@ type: "Townhouse",
 image: img19,
 bedRooms: 4,
 bathRooms: 3,
-adress: "2121 Birch Street, Birchwood Park",
+address: "2121 Birch Street, Birchwood Park",
 id: 19,
 description: "Experience contemporary living in our stylish townhouse located in the vibrant community of Birchwood Park. This spacious residence boasts four bedrooms, three bathrooms, and an open-concept layout. Enjoy the convenience of nearby amenities, including parks, schools, and recreational facilities.",
 agent_id: 9
@@ -312,7 +312,7 @@ type: "Apartment",
 image: img21,
 bedRooms: 2,
 bathRooms: 2,
-adress: "2323 Pine Street, Pineville Place",
+address: "2323 Pine Street, Pineville Place",
 id: 21,
 description: "Discover modern living in our contemporary two-bedroom apartment located in the sought-after neighborhood of Pineville Place. This stylish residence offers sleek finishes, spacious living areas, and access to amenities such as a fitness center and outdoor terrace. With its central location, you'll have easy access to dining, shopping, and entertainment options.",
 agent_id: 1
@@ -342,7 +342,7 @@ type: "Townhouse",
 image: img24,
 bedRooms: 3,
 bathRooms: 2,
-adress: "2626 Cedar Avenue, Cedar Creek",
+address: "2626 Cedar Avenue, Cedar Creek",
 id: 24,
 description: "Live in style in our chic townhouse located in the desirable community of Cedar Creek. This modern residence features three bedrooms, two bathrooms, and an open-concept layout. Enjoy the convenience of nearby amenities, including parks, shopping centers, and restaurants.",
 agent_id: 4

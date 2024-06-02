@@ -6,7 +6,7 @@ import { FaWhatsappSquare } from 'react-icons/fa';
 
 function Footer() {
     return (
-      <footer className="bg-dark py-4">
+      <footer className="bg-secondary py-4">
         <Container>
           <Row>
             <Col lg="3">
@@ -49,7 +49,7 @@ function Footer() {
               <ul className="list-unstyled">
                 <li>
                   <Link
-                    className="text-decoration-none fs-5 text-secondary"
+                    className="text-decoration-none fs-5 text-light"
                     to="/"
                   >
                     Home
@@ -57,7 +57,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="text-decoration-none fs-5 text-secondary"
+                    className="text-decoration-none fs-5 text-light"
                     to="/about"
                   >
                     About Us
@@ -65,7 +65,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="text-decoration-none fs-5 text-secondary"
+                    className="text-decoration-none fs-5 text-light"
                     to="/contact"
                   >
                     Contact Us
@@ -73,7 +73,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="text-decoration-none fs-5 text-secondary"
+                    className="text-decoration-none fs-5 text-light"
                     to="/sales"
                   >
                     For Sale
@@ -81,7 +81,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="text-decoration-none fs-5 text-secondary"
+                    className="text-decoration-none fs-5 text-light"
                     to="/rent"
                   >
                     For Rent
@@ -89,7 +89,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    className="text-decoration-none fs-5 text-secondary"
+                    className="text-decoration-none fs-5 text-light"
                     to="/about"
                   >
                     Blog
