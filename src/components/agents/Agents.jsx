@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import agents from './AgentDetails';
-import backgroundImage from '../../img/background_img_1.jpg'
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 
@@ -13,21 +12,15 @@ function AgentPage() {
   }, []);
   return ( 
     <>
-    <section  className="bg-info py-5"
-    style={{
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundAttachment: "fixed",
-      backgroundSize: "cover",
-    }}> 
+    <section  className="py-5"> 
     <div
         className="text-center py-5"
         style={{
-          backgroundColor: "rgba(0,0,0,0.8)",
-          marginTop: "100px",
+            marginTop: "100px",
         }}
       >
-        <h2 className="mb-3 text-light fw-bolder">Meet Our Agents</h2>
-        <p className='text-light'>At <strong>Dreamscape</strong>, our team of professional agents is here to guide you through every step of your real estate journey. Whether you're buying your first home, selling a property, or looking for an investment opportunity, our experienced agents are committed to providing exceptional service and expert advice. Get to know our team below and find the perfect agent to help you achieve your real estate goals.</p>
+        <h2 className="mb-3 fw-bolder">Meet Our Agents</h2>
+        <p className=''>At <strong>Dreamscape</strong>, our team of professional agents is here to guide you through every step of your real estate journey. Whether you're buying your first home, selling a property, or looking for an investment opportunity, our experienced agents are committed to providing exceptional service and expert advice. Get to know our team below and find the perfect agent to help you achieve your real estate goals.</p>
       </div>
     <Container className='text-center'>
       <Row>
