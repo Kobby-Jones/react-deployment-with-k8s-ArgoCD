@@ -5,15 +5,20 @@ COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --production --silent && mv node_modules ../
 COPY . .
 
-RUN npm run build
+EXPOSE 3000
+RUN chown -R node /usr/src/app
+USER node
+CMD ["npm", "start"]
 
-# Start with NGINX
-FROM nginx
-COPY --from=build /usr/src/app/build /usr/share/nginx/html
+# RUN npm run build
 
-# Expose port 3000 and map it to container port 80
-EXPOSE 3000:80
+# # Start with NGINX
+# FROM nginx
+# COPY --from=build /usr/src/app/build /usr/share/nginx/html
 
-# Start nginx
-CMD ["nginx", "-g" "daemon off;"]
+# # Expose port 3000 and map it to container port 80
+# EXPOSE 3000:80
+
+# # Start nginx
+# CMD ["nginx", "-g" "daemon off;"]
 
