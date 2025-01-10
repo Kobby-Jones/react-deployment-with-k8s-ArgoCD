@@ -16,7 +16,7 @@ function WhoWeAre() {
         </div>
         <div className="text-center">
           <p className='text-light'>
-            At KJ Real Estate Agency Ltd, we're passionate about creating
+            At KJ Real Estate Agency Limitedd, we're passionate about creating
             exceptional living spaces that meet the needs and desires of our
             clients. With years of experience in the industry, we're committed
             to delivering high-quality, sustainable developments that not only
