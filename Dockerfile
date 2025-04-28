@@ -1,24 +1,19 @@
-FROM node:lts-alpine
-ENV NODE_ENV=production
-WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production --silent && mv node_modules ../
+# Build Stage
+FROM node:18-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
 COPY . .
+RUN npm run build
 
-EXPOSE 3000
-RUN chown -R node /usr/src/app
-USER node
-CMD ["npm", "start"]
 
-# RUN npm run build
+# Production Stage
+FROM nginx
+# Copy the built files from the build stage
+COPY --from=build /app/build /usr/share/nginx/html
+# Expose port 3000 and map it to container port 80
+EXPOSE 3000:80
 
-# # Start with NGINX
-# FROM nginx
-# COPY --from=build /usr/src/app/build /usr/share/nginx/html
-
-# # Expose port 3000 and map it to container port 80
-# EXPOSE 3000:80
-
-# # Start nginx
-# CMD ["nginx", "-g" "daemon off;"]
+# Start nginx
+CMD ["nginx", "-g" "daemon off;"]
 
