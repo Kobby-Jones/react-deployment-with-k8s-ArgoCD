@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# React Web App Deployment with Kubernetes and ArgoCD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates how to deploy a React web application using Docker, Kubernetes, and ArgoCD. The app is built with React and served using Nginx inside a Docker container. Kubernetes is used for container orchestration, and ArgoCD (configured via its UI) is used for continuous deployment following GitOps principles.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- ⚛️ React frontend with modern JavaScript
+- 🐳 Dockerized and served via Nginx
+- ☸️ Kubernetes deployment for container orchestration
+- 🚀 GitOps-style CI/CD using ArgoCD UI
+- 📦 Clean, modular, and reproducible project setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔧 Prerequisites
 
-### `npm run build`
+Make sure the following are installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Docker
+- Kubernetes (Minikube, Kind, or any cluster)
+- kubectl
+- Node.js and npm (for local development/testing)
+- ArgoCD (installed in your cluster)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📥 Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/Kobby-Jones/react-deployment-with-k8s-ArgoCD.git
+cd react-deployment-with-k8s-ArgoCD
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Run React App Locally (Optional)
+```bash
+npm install
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+- Visit (https://localhost:3000)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Set Up ArgoCD (Using UI)
+### This project uses the ArgoCD Web UI for configuring the deployment.
+1. ### Access the ArgoCD UI
+Port-forward
+```bash
+kubectl port-forward svc/argocd-server -n argocd 8080:443
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+- Visit (https://localhost:8080)
 
-### Code Splitting
+2. ### Login to ArgoCD.
+3. ### Click "New App" and fill in:
+Application Name: react-k8s-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Project: default
 
-### Analyzing the Bundle Size
+Sync Policy: Manual or Automatic (your choice)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Repository URL: Your GitHub repo URL
 
-### Making a Progressive Web App
+Path: k8s
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Cluster: https://kubernetes.default.svc
 
-### Advanced Configuration
+Namespace: e.g., default(The namespace should be created to match the ones in the service.yml and deployment.yml files)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+4. ### Click "Create", then "Sync" to deploy the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. ## You can visit the running web page by running the following command:
+```bash
+minikube service your-service-name -n your-namespace
 
-### `npm run build` fails to minify
+```
+# 📸 Screenshots
+<p float="left">
+  <img src="screenshorts\argocd-flow.png" width="400"/>
+  <img src="screenshorts\argocd-ui-tree.png" width="400"/>
+  <img src="screenshorts\argocd-ui-list.png" width="400"/>
+  <img src="screenshorts\webpage-1.png" width="400"/>
+  <img src="screenshorts\webpage-2.png" width="400"/>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# 🙏 Acknowledgements
+
+- [React](https://reactjs.org/)
+- [Docker](https://www.docker.com/)
+- [Kubernetes](https://kubernetes.io/)
+- [ArgoCD](https://argo-cd.readthedocs.io/)
+- [Nginx](https://www.nginx.com/)
