@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  react-frontend
-  namespace: default
+  namespace: react-frontend
   labels:
     app:  react-frontend
 spec:

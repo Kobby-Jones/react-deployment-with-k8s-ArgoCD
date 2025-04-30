@@ -12,8 +12,8 @@ FROM nginx
 # Copy the built files from the build stage
 COPY --from=build /app/build /usr/share/nginx/html
 # Expose port 3000 and map it to container port 80
-EXPOSE 3000:80
+EXPOSE 80
 
 # Start nginx
-CMD ["nginx", "-g" "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
 
