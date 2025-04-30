@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-react-frontend-service
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Release.Name }}-react-frontend
+  type: {{ .Values.service.type }}
+  sessionAffinity: {{ .Values.service.sessionAffinity }}
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: {{ .Values.service.sessionAffinityConfig.clientIP.timeoutSeconds }}
+  ports:
+  - name: {{ .Release.Name }}-react-frontend
+    protocol: TCP
+    port: {{ .Values.service.port }}
+    targetPort: 80
+    nodePort: {{ .Values.service.nodePort }}
