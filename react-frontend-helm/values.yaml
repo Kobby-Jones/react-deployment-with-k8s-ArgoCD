@@ -13,7 +13,6 @@ resources:
 service:
   type: NodePort
   port: 80
-  nodePort: 30080
   sessionAffinity: None
   sessionAffinityConfig:
     clientIP:
