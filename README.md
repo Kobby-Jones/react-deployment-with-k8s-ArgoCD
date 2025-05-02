@@ -57,7 +57,13 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 - Visit (https://localhost:8080)
 
-2. ### Login to ArgoCD.
+2. ### Login to ArgoCD.(Username = admin)
+### Use the following command to get the initial password for argocd 'admin' user(This command works when you have the ArgoCD CLI installed on your device)
+```bash
+argocd admin initial-password -n argocd
+
+```
+
 3. ### Click "New App" and fill in:
 Application Name: react-k8s-app
 
@@ -76,11 +82,44 @@ Namespace: e.g., default(The namespace should be created to match the ones in th
 
 4. ### Click "Create", then "Sync" to deploy the app.
 
-5. ## You can visit the running web page by running the following command:
+5. ### You can visit the running web page by running the following command:
 ```bash
 minikube service your-service-name -n your-namespace
 
 ```
+<!-- ## Monitoring with Prometheus and Grafana
+Adding the Helm repo for kube-prometheus-stack
+```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+
+```
+create k8s namespace for prometheus
+```bash
+kubectl create namespace prometheus
+
+```
+# deploy chart
+```bash
+helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus
+
+```
+## Access Grafana
+```bash
+kubectl port-forward svc/prometheus-grafana -n prometheus 3000:80
+
+```
+### Open your browser and visit: http://localhost:3000
+### Use the following command (Windows) to get the initial password for the grafana admin user
+```bash
+ [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((kubectl -n prometheus get secret prometheus-grafana -o jsonpath="{.data.admin-password}")))
+
+``` -->
+
+
+
+
+
 # 📸 Screenshots
 <p float="left">
   <img src="screenshorts\argocd-flow.png" width="400"/>
