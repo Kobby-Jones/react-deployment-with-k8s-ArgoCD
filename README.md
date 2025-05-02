@@ -1,4 +1,4 @@
-# React Web App Deployment with Kubernetes and ArgoCD
+# React Web App Deployment with Kubernetes and ArgoCD (GitOps practices)
 
 This project demonstrates how to deploy a React web application using Docker, Kubernetes, and ArgoCD. The app is built with React and served using Nginx inside a Docker container. Kubernetes is used for container orchestration, and ArgoCD (configured via its UI) is used for continuous deployment following GitOps principles.
 
